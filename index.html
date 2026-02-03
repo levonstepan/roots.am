@@ -25,7 +25,7 @@
         </a>
         <button class="nav-toggle" aria-label="Toggle navigation">Menu</button>
         <nav class="nav-links">
-          <a href="index.html">Home</a>
+          <a href="index.html#home">Home</a>
           <a href="about.html">About</a>
           <a href="products.html">Products</a>
           <a href="customize.html">Customize</a>
@@ -36,26 +36,21 @@
       </div>
     </header>
 
-    <section class="hero">
+    <section class="hero" id="home">
       <div class="container hero-grid">
         <div>
-          <span class="tag">Since 1999 · Family Business</span>
-          <h1>Rooted in tradition. Crafted with precision.</h1>
-          <p>
-            Roots Furniture makes tables and chairs from natural beech in
-            Vagharshapat. We combine Armenian woodworking with Industry 4.0
-            automation to deliver consistent, honest craftsmanship.
-          </p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="products.html">Explore Products</a>
-            <a class="btn btn-outline" href="customize.html">Design Your Chair</a>
+          <div class="hero-copy">
+            <h1>Rooted in tradition.<br />Crafted with precision.</h1>
+            <p>
+              Roots Furniture makes tables and chairs from natural beech in
+              Vagharshapat. We combine Armenian woodworking with Industry 4.0
+              automation to deliver consistent, honest craftsmanship.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="products.html">Explore Products</a>
+              <a class="btn btn-outline" href="customize.html">Design Your Chair</a>
+            </div>
           </div>
-        </div>
-        <div class="hero-card">
-          <div class="image-placeholder"></div>
-          <p class="muted" style="margin-top: 1rem">
-            Focused on tables & chairs. Mastery over mass variety.
-          </p>
         </div>
       </div>
     </section>
@@ -115,18 +110,16 @@
     </section>
 
     <section>
-      <div class="container two-col">
-        <div>
-          <h2 class="section-title">Signature Product</h2>
-          <p class="section-subtitle">
-            Crafted for comfort, engineered for endurance.
-          </p>
-          <p>
-            “The quality is visible in every joint and surface. You feel the
-            care.” — Customer, Yerevan
-          </p>
+      <div class="container">
+        <div class="signature-video signature-video-large">
+          <video
+            src="Videos and 3D/Gortsaran.mp4"
+            autoplay
+            muted
+            loop
+            playsinline
+          ></video>
         </div>
-        <div class="image-placeholder"></div>
       </div>
     </section>
 
@@ -174,22 +167,57 @@
     </section>
 
     <section>
-      <div class="container two-col">
-        <div>
-          <h2 class="section-title">Technology & Ecology</h2>
-          <p class="section-subtitle">
-            Tradition × Automation × Sustainability
-          </p>
-          <ul class="muted">
-            <li>Automated sanding + manual finishing</li>
-            <li>Waste-free production and two-stage combustion</li>
-            <li>Solar energy powering the factory</li>
-          </ul>
-          <a class="btn btn-outline" href="production.html" style="margin-top: 1rem"
-            >See Production</a
-          >
+      <div class="container">
+        <div class="model-row">
+          <div class="model-card">
+            <model-viewer
+              class="model-viewer"
+              src="Videos%20and%203D/Chair%203D%20models/001%20wooden%20chair.glb"
+              camera-controls
+              interaction-prompt="none"
+              shadow-intensity="0.6"
+              environment-image="neutral"
+              reveal="auto"
+              loading="eager"
+            ></model-viewer>
+          </div>
+          <div class="model-card">
+            <model-viewer
+              class="model-viewer"
+              src="Videos%20and%203D/Chair%203D%20models/041%20wooden%20chair.glb"
+              camera-controls
+              interaction-prompt="none"
+              shadow-intensity="0.6"
+              environment-image="neutral"
+              reveal="auto"
+              loading="eager"
+            ></model-viewer>
+          </div>
+          <div class="model-card">
+            <model-viewer
+              class="model-viewer"
+              src="Videos%20and%203D/Chair%203D%20models/071%20wooden%20chair.glb"
+              camera-controls
+              interaction-prompt="none"
+              shadow-intensity="0.6"
+              environment-image="neutral"
+              reveal="auto"
+              loading="eager"
+            ></model-viewer>
+          </div>
+          <div class="model-card">
+            <model-viewer
+              class="model-viewer"
+              src="Videos%20and%203D/Chair%203D%20models/091%20wooden%20chair%20.glb"
+              camera-controls
+              interaction-prompt="none"
+              shadow-intensity="0.6"
+              environment-image="neutral"
+              reveal="auto"
+              loading="eager"
+            ></model-viewer>
+          </div>
         </div>
-        <div class="image-placeholder"></div>
       </div>
     </section>
 
@@ -209,31 +237,32 @@
 
     <section>
       <div class="container">
-        <h2 class="section-title">Social Presence</h2>
+        <h2 class="section-title">Contact Us</h2>
         <p class="section-subtitle">
-          Follow our process and new releases.
+          Custom orders, B2B/export, and factory visits.
         </p>
-        <div class="social-grid">
-          <div class="social-tile">Instagram</div>
-          <div class="social-tile">Facebook</div>
-          <div class="social-tile">YouTube</div>
+        <div class="two-col">
+          <div class="card">
+            <h3>General Inquiry</h3>
+            <p class="muted">info@roots.am</p>
+            <p>Vagharshapat / Ejmiatsin, Armenia</p>
+          </div>
+          <div class="card">
+            <h3>Custom Order Inquiry</h3>
+            <p class="muted">custom@roots.am</p>
+            <p>Share your requirements and timeline.</p>
+          </div>
         </div>
-      </div>
-    </section>
-
-    <section>
-      <div class="container two-col">
-        <div>
-          <h2 class="section-title">Stay Tuned</h2>
-          <p class="section-subtitle">
-            Get updates about new collections, exhibitions, and guides.
-          </p>
-          <a class="btn btn-primary" href="contact.html">Contact Us</a>
-        </div>
-        <div class="card">
-          <h3>Contact Hook</h3>
-          <p class="muted">Custom orders · B2B · Export inquiries</p>
-          <p style="margin-top: 1rem">Vagharshapat / Ejmiatsin, Armenia</p>
+        <div class="card" style="margin-top: 2rem;">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3048.628558444048!2d44.3309115!3d40.172823099999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x406a959d3f8e0701%3A0x4f3c4dcd7d2a4d07!2sRoots%20Furniture!5e0!3m2!1sen!2sam!4v1770090328873!5m2!1sen!2sam"
+            width="100%"
+            height="450"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
       </div>
     </section>
@@ -275,6 +304,10 @@
       </div>
     </footer>
 
+    <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
+    ></script>
     <script src="script.js"></script>
   </body>
 </html>

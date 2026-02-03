@@ -16,3 +16,26 @@ navItems.forEach((item) => {
     item.classList.add("active");
   }
 });
+
+const modelViewers = document.querySelectorAll(".model-viewer");
+
+modelViewers.forEach((viewer) => {
+  viewer.setAttribute("camera-orbit", "0deg 75deg 2.4m");
+  viewer.setAttribute("field-of-view", "30deg");
+
+  let rotateTimeout;
+
+  viewer.addEventListener("mouseenter", () => {
+    viewer.autoRotate = true;
+    viewer.setAttribute("camera-orbit", "35deg 70deg 2m");
+    clearTimeout(rotateTimeout);
+    rotateTimeout = setTimeout(() => {
+      viewer.autoRotate = false;
+    }, 700);
+  });
+
+  viewer.addEventListener("mouseleave", () => {
+    viewer.autoRotate = false;
+    viewer.setAttribute("camera-orbit", "0deg 75deg 2.4m");
+  });
+});
