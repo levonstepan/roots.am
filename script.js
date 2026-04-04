@@ -1,3 +1,21 @@
+const playInViewVideos = document.querySelectorAll(".video-play-in-view");
+
+playInViewVideos.forEach((video) => {
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          video.play().catch(() => {});
+        } else {
+          video.pause();
+        }
+      });
+    },
+    { root: null, threshold: 0.28 }
+  );
+  observer.observe(video);
+});
+
 const navToggle = document.querySelector(".nav-toggle");
 const navLinks = document.querySelector(".nav-links");
 
@@ -17,25 +35,33 @@ navItems.forEach((item) => {
   }
 });
 
-const modelViewers = document.querySelectorAll(".model-viewer");
+function initModelViewerInteractions() {
+  const modelViewers = document.querySelectorAll("model-viewer.model-viewer");
 
-modelViewers.forEach((viewer) => {
-  viewer.setAttribute("camera-orbit", "0deg 75deg 2.4m");
-  viewer.setAttribute("field-of-view", "30deg");
-
-  let rotateTimeout;
-
-  viewer.addEventListener("mouseenter", () => {
-    viewer.autoRotate = true;
-    viewer.setAttribute("camera-orbit", "35deg 70deg 2m");
-    clearTimeout(rotateTimeout);
-    rotateTimeout = setTimeout(() => {
-      viewer.autoRotate = false;
-    }, 700);
-  });
-
-  viewer.addEventListener("mouseleave", () => {
-    viewer.autoRotate = false;
+  modelViewers.forEach((viewer) => {
     viewer.setAttribute("camera-orbit", "0deg 75deg 2.4m");
+    viewer.setAttribute("field-of-view", "30deg");
+
+    let rotateTimeout;
+
+    viewer.addEventListener("mouseenter", () => {
+      viewer.autoRotate = true;
+      viewer.setAttribute("camera-orbit", "35deg 70deg 2m");
+      clearTimeout(rotateTimeout);
+      rotateTimeout = setTimeout(() => {
+        viewer.autoRotate = false;
+      }, 700);
+    });
+
+    viewer.addEventListener("mouseleave", () => {
+      viewer.autoRotate = false;
+      viewer.setAttribute("camera-orbit", "0deg 75deg 2.4m");
+    });
   });
-});
+}
+
+if (customElements.get("model-viewer")) {
+  initModelViewerInteractions();
+} else {
+  customElements.whenDefined("model-viewer").then(initModelViewerInteractions);
+}

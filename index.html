@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Raleway:wght@700;800&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -23,16 +23,23 @@
           Roots Furniture
           <span>Acobian Furniture</span>
         </a>
-        <button class="nav-toggle" aria-label="Toggle navigation">Menu</button>
-        <nav class="nav-links">
-          <a href="index.html#home">Home</a>
-          <a href="about.html">About</a>
-          <a href="products.html">Products</a>
-          <a href="customize.html">Customize</a>
-          <a href="production.html">Production</a>
-          <a href="journal.html">Journal</a>
-          <a href="contact.html">Contact</a>
-        </nav>
+        <div class="nav-actions">
+          <button class="nav-toggle" aria-label="Toggle navigation">Menu</button>
+          <div class="nav-right">
+            <nav class="nav-links">
+              <a href="index.html#home">Home</a>
+              <a href="#story">About</a>
+              <a href="#products">Products</a>
+              <a href="#customization">Customization</a>
+              <a href="#people">People</a>
+              <a href="#contact">Contact</a>
+            </nav>
+            <div class="language-switch" aria-label="Language switch">
+              <button class="lang-btn is-active" type="button">EN</button>
+              <button class="lang-btn" type="button">Հայ</button>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -47,51 +54,60 @@
               automation to deliver consistent, honest craftsmanship.
             </p>
             <div class="hero-actions">
-              <a class="btn btn-primary" href="products.html">Explore Products</a>
-              <a class="btn btn-outline" href="customize.html">Design Your Chair</a>
+              <a class="btn btn-primary" href="#products">Explore Products</a>
+              <a class="btn btn-outline" href="#customization">Customise Your Chair</a>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section>
-      <div class="container two-col">
-        <div class="highlight">
+    <section class="story-section" id="story">
+      <div class="container two-col story-layout">
+        <div class="highlight story-highlight">
+          <span class="tag">Since 1999</span>
           <h2 class="section-title">Story Snapshot</h2>
           <p class="section-subtitle">
             Family roots, modern precision, built in Armenia.
           </p>
           <p>
-            Roots Furniture is a family business with over 20 years of history.
-            Started by the grandfather, passed down, and transformed by Levon
-            Stepanyan. We keep the heart of craftsmanship and amplify it with
-            smart automation.
+            Roots Furniture is a family business with over 20 years of history. We
+            keep the heart of craftsmanship and amplify it with smart automation.
           </p>
+          <div class="story-points">
+            <div class="story-point">
+              <h4>Family legacy</h4>
+              <p>Handed down through generations.</p>
+            </div>
+            <div class="story-point">
+              <h4>Industry 4.0 precision</h4>
+              <p>Automation for consistency and accuracy.</p>
+            </div>
+          </div>
           <a class="btn btn-outline" href="about.html" style="margin-top: 1.5rem"
             >Learn More</a
           >
         </div>
-        <div class="card">
+        <div class="card story-proof">
           <h3>Proof & Trust</h3>
           <p class="muted">
             Supported by Acba Leasing · Exporting to Russia · Exhibitions ·
             Certifications
           </p>
           <div class="card-grid" style="margin-top: 1.5rem">
-            <div class="card">
+            <div class="card proof-card">
               <strong>Italian 5-axis CNC</strong>
               <p class="muted">Precision manufacturing</p>
             </div>
-            <div class="card">
+            <div class="card proof-card">
               <strong>Waste-free</strong>
               <p class="muted">Dust collection + furnace</p>
             </div>
-            <div class="card">
+            <div class="card proof-card">
               <strong>Solar Power</strong>
               <p class="muted">Zero electricity cost</p>
             </div>
-            <div class="card">
+            <div class="card proof-card">
               <strong>Smart Kilns</strong>
               <p class="muted">Remote monitoring</p>
             </div>
@@ -113,160 +129,246 @@
       <div class="container">
         <div class="signature-video signature-video-large">
           <video
-            src="Videos%20and%203D/Gortsaran.mp4"
+            class="video-play-in-view"
+            muted
+            loop
+            playsinline
+            preload="auto"
+            controls
+          >
+            <source
+              src="Videos%20and%203D/verjnakan%20rtfr.mp4"
+              type="video/mp4"
+            />
+          </video>
+        </div>
+      </div>
+    </section>
+
+    <section id="products">
+      <div class="container">
+        <h2 class="section-title">Product Categories</h2>
+        <div class="class-grid">
+          <article class="class-card econom">
+            <header class="class-head">
+              <h3>Econom</h3>
+              <p>Accessible • Practical • Honest</p>
+            </header>
+            <ul>
+              <li>Focus on essential function</li>
+              <li>Simplified, clean design</li>
+              <li>Efficient material usage</li>
+              <li>Standard wood and finishes</li>
+              <li>Durable for everyday use</li>
+              <li>Cost-optimized production</li>
+              <li>Ideal for rental or budget-conscious spaces</li>
+            </ul>
+          </article>
+          <article class="class-card standard">
+            <header class="class-head">
+              <h3>Standard</h3>
+              <p>Balanced • Refined • Versatile</p>
+            </header>
+            <ul>
+              <li>Improved comfort and ergonomics</li>
+              <li>More refined proportions and details</li>
+              <li>Better material selection</li>
+              <li>Wider choice of finishes and fabrics</li>
+              <li>Strong balance of price and quality</li>
+              <li>Suitable for most home interiors</li>
+            </ul>
+          </article>
+          <article class="class-card premium">
+            <header class="class-head">
+              <h3>Premium</h3>
+              <p>Crafted • Detailed • Expressive</p>
+            </header>
+            <ul>
+              <li>High-quality, carefully selected wood</li>
+              <li>Advanced finishing techniques</li>
+              <li>Attention to fine details and joints</li>
+              <li>More complex forms and aesthetics</li>
+              <li>Enhanced tactile and visual experience</li>
+              <li>Built for longevity and presence</li>
+            </ul>
+          </article>
+          <article class="class-card custom">
+            <header class="class-head">
+              <h3>Custom</h3>
+              <p>Personal • Adaptive • Unique</p>
+            </header>
+            <ul>
+              <li>Customizable</li>
+              <li>Choice of wood, fabric, and finishes</li>
+              <li>Adapted to specific interior spaces</li>
+              <li>Collaborative design process</li>
+              <li>Unique, one-of-a-kind pieces</li>
+              <li>Flexible production approach</li>
+              <li>Tailored to individual needs and vision</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="environment-section">
+      <div class="environment-inner">
+        <div class="environment-parallax" aria-hidden="true"></div>
+        <div class="container environment-section-content">
+          <div class="environment-text-frame">
+            <h2 class="section-title">We Care About the Environment.</h2>
+            <p class="section-subtitle">
+              We run a low-waste shop: dust and offcuts feed recovery instead of the
+              trash pile, solar offsets a real share of our power, and we tune kilns
+              and cutting so timber goes further. Less scrap, less guesswork—and
+              furniture you can still be proud to put in a room.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="customise-showcase-section" id="customization">
+      <div class="container two-col customise-showcase">
+        <div class="customise-showcase-video-wrap">
+          <video
+            class="customise-showcase-video"
             autoplay
             muted
             loop
             playsinline
-          ></video>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <div class="container">
-        <h2 class="section-title">Products by Class</h2>
-        <p class="section-subtitle">
-          Acobian Furniture tables and chairs, crafted in Armenia.
-        </p>
-        <div class="product-categories">
-          <div class="product-card">
-            <div class="image-placeholder"></div>
-            <div class="content">
-              <h3>Chairs</h3>
-              <p class="muted">Econom · Standard · Premium · By Request</p>
-            </div>
-          </div>
-          <div class="product-card">
-            <div class="image-placeholder"></div>
-            <div class="content">
-              <h3>Tables</h3>
-              <p class="muted">Econom · Standard · Premium · By Request</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <div class="container two-col">
-        <div class="image-placeholder"></div>
-        <div>
-          <h2 class="section-title">Design Your Chair</h2>
-          <p class="section-subtitle">
-            A destination for customization and collaboration.
-          </p>
-          <p>
-            Choose shell, wood, and fabric. Get a summary and send a request.
-          </p>
-          <a class="btn btn-primary" href="customize.html" style="margin-top: 1rem"
-            >Open Playground</a
+            aria-label="Chair customization preview animation"
           >
+            <source
+              src="Videos%20and%203D/ezgif-82036b1ccbbd5852.mp4"
+              type="video/mp4"
+            />
+          </video>
+        </div>
+        <div class="customise-copy-frame">
+          <p class="customise-eyebrow">Configurator</p>
+          <h2 class="section-title">Customise Your Chair</h2>
+          <p class="section-subtitle customise-copy-subtitle">
+            Shape the details that matter.
+          </p>
+          <p class="customise-copy-body">
+            Pick the seat and back profiles you prefer, select beech tones and
+            surface treatments, and pair upholstery that fits your space. Each
+            combination is built around the same honest construction we use across
+            our tables and chairs.
+          </p>
+          <p class="customise-copy-body">
+            When you are ready, we review your choices, confirm timelines, and
+            answer questions so nothing is left ambiguous before production
+            begins in our Vagharshapat workshop.
+          </p>
+          <ul class="customise-copy-list" aria-label="What you can customise">
+            <li>Shell and silhouette options</li>
+            <li>Wood stain and natural grain direction</li>
+            <li>Fabric or leather family and colour direction</li>
+            <li>Hardware and edge details where applicable</li>
+          </ul>
         </div>
       </div>
     </section>
 
-    <section>
+    <section id="people">
       <div class="container">
-        <div class="model-row">
-          <div class="model-card">
-            <model-viewer
-              class="model-viewer"
-              src="Videos%20and%203D/Chair%203D%20models/001%20wooden%20chair.glb"
-              camera-orbit="90deg 75deg 2.4m"
-              camera-controls
-              interaction-prompt="none"
-              shadow-intensity="0.6"
-              environment-image="neutral"
-              reveal="auto"
-              loading="eager"
-            ></model-viewer>
+        <div class="people-video-hero">
+          <div class="signature-video signature-video-large">
+            <video autoplay muted loop playsinline>
+              <source
+                src="Videos%20and%203D/Roots-i%20mardik.mp4"
+                type="video/mp4"
+              />
+            </video>
           </div>
-          <div class="model-card">
-            <model-viewer
-              class="model-viewer"
-              src="Videos%20and%203D/Chair%203D%20models/041%20wooden%20chair.glb"
-              camera-orbit="-90deg 75deg 2.4m"
-              camera-controls
-              interaction-prompt="none"
-              shadow-intensity="0.6"
-              environment-image="neutral"
-              reveal="auto"
-              loading="eager"
-            ></model-viewer>
-          </div>
-          <div class="model-card">
-            <model-viewer
-              class="model-viewer"
-              src="Videos%20and%203D/Chair%203D%20models/071%20wooden%20chair.glb"
-              camera-orbit="-90deg 75deg 2.4m"
-              camera-controls
-              interaction-prompt="none"
-              shadow-intensity="0.6"
-              environment-image="neutral"
-              reveal="auto"
-              loading="eager"
-            ></model-viewer>
-          </div>
-          <div class="model-card">
-            <model-viewer
-              class="model-viewer"
-              src="Videos%20and%203D/Chair%203D%20models/091%20wooden%20chair%20.glb"
-              camera-orbit="90deg 75deg 2.4m"
-              camera-controls
-              interaction-prompt="none"
-              shadow-intensity="0.6"
-              environment-image="neutral"
-              reveal="auto"
-              loading="eager"
-            ></model-viewer>
-          </div>
+          <h2 class="people-animated-title">
+            <div class="people-title-moving-bg">
+              <div class="people-flyin-txt-cont">
+                <span class="people-flyIn people-line-one">Meet</span>
+                <span class="people-flyIn people-line-two">Our</span>
+                <span class="people-flyIn people-line-three">People</span>
+                <span class="people-flyIn people-line-four"
+                  >The hands, habits, and humour<br />
+                  behind every piece.</span
+                >
+              </div>
+            </div>
+          </h2>
         </div>
       </div>
     </section>
 
-    <section>
-      <div class="container highlight">
-        <h2 class="section-title">Meet the Makers</h2>
-        <p class="section-subtitle">
-          The artists behind the craft, based in Vagharshapat.
-        </p>
-        <div class="card-grid">
-          <div class="card">Family business · 20+ years</div>
-          <div class="card">Natural beech raw material</div>
-          <div class="card">Manual + automated craftsmanship</div>
-        </div>
-      </div>
-    </section>
-
-    <section>
+    <section id="contact">
       <div class="container">
         <h2 class="section-title">Contact Us</h2>
-        <p class="section-subtitle">
-          Custom orders, B2B/export, and factory visits.
-        </p>
-        <div class="two-col">
-          <div class="card">
-            <h3>General Inquiry</h3>
-            <p class="muted">info@roots.am</p>
-            <p>Vagharshapat / Ejmiatsin, Armenia</p>
+        <div class="contact-grid">
+          <div class="contact-card">
+            <p class="contact-intro">Roots Furniture LLC</p>
+            <div class="contact-item">
+              <span class="contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" role="presentation">
+                  <path
+                    d="M12 2.5c-3.6 0-6.5 2.9-6.5 6.5 0 4.9 6.5 12.5 6.5 12.5s6.5-7.6 6.5-12.5c0-3.6-2.9-6.5-6.5-6.5zm0 9.5c-1.7 0-3-1.3-3-3s1.3-3 3-3 3 1.3 3 3-1.3 3-3 3z"
+                  />
+                </svg>
+              </span>
+              <div>
+                <h3>Address</h3>
+                <p>20/1 Ter-Gabrielyan Street, Vagharshapat</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" role="presentation">
+                  <path
+                    d="M6.6 3.5c.4 0 .8.2 1 .6l1.6 3.4c.2.4.1.9-.2 1.2l-1.4 1.3c1.1 2 2.8 3.7 4.8 4.8l1.3-1.4c.3-.3.8-.4 1.2-.2l3.4 1.6c.4.2.6.6.6 1v2.6c0 .6-.5 1-1.1 1-7.4 0-13.4-6-13.4-13.4 0-.6.4-1.1 1-1.1h2.6z"
+                  />
+                </svg>
+              </span>
+              <div>
+                <h3>Phone</h3>
+                <p>+374 91 665520</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" role="presentation">
+                  <path
+                    d="M12 12.5c2.2 0 4-1.8 4-4s-1.8-4-4-4-4 1.8-4 4 1.8 4 4 4zm0 2c-3 0-6 1.5-6 3.5V20h12v-2c0-2-3-3.5-6-3.5z"
+                  />
+                </svg>
+              </span>
+              <div>
+                <h3>Leadership</h3>
+                <p>Levon Stepanyan - CEO of Roots LLC</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" role="presentation">
+                  <path
+                    d="M4 5h16c1.1 0 2 .9 2 2v10c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2zm0 2v.2l8 4.8 8-4.8V7H4zm16 10V9.5l-7.5 4.5c-.3.2-.7.2-1 0L4 9.5V17h16z"
+                  />
+                </svg>
+              </span>
+              <div>
+                <h3>Email</h3>
+                <p>info@roots.am</p>
+              </div>
+            </div>
           </div>
-          <div class="card">
-            <h3>Custom Order Inquiry</h3>
-            <p class="muted">custom@roots.am</p>
-            <p>Share your requirements and timeline.</p>
+          <div class="card contact-map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3048.628558444048!2d44.3309115!3d40.172823099999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x406a959d3f8e0701%3A0x4f3c4dcd7d2a4d07!2sRoots%20Furniture!5e0!3m2!1sen!2sam!4v1770090328873!5m2!1sen!2sam"
+              width="100%"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
-        </div>
-        <div class="card" style="margin-top: 2rem;">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3048.628558444048!2d44.3309115!3d40.172823099999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x406a959d3f8e0701%3A0x4f3c4dcd7d2a4d07!2sRoots%20Furniture!5e0!3m2!1sen!2sam!4v1770090328873!5m2!1sen!2sam"
-            width="100%"
-            height="450"
-            style="border:0;"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
         </div>
       </div>
     </section>
@@ -304,14 +406,11 @@
         </div>
       </div>
       <div class="container footer-bottom">
-        © 2026 Roots Furniture · Acobian Furniture
+        <span>© 2026 Roots Furniture · Acobian Furniture</span>
+        <span class="footer-tagline">Made with ❤ in Armenia</span>
       </div>
     </footer>
 
-    <script
-      type="module"
-      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
-    ></script>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
   </body>
 </html>
