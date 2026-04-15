@@ -153,20 +153,15 @@ const translations = {
     environmentTitle: "We Care About the Environment.",
     environmentBody:
       "We run a low-waste shop: dust and offcuts feed recovery instead of the trash pile, solar offsets a real share of our power, and we tune kilns and cutting so timber goes further. Less scrap, less guesswork-and furniture you can still be proud to put in a room.",
-    customiseEyebrow: "Configurator",
     customiseTitle: "Customise Your Chair",
-    customiseSubtitle: "Shape the details that matter.",
-    customiseBodyOne:
-      "Pick the seat and back profiles you prefer, select beech tones and surface treatments, and pair upholstery that fits your space. Each combination is built around the same honest construction we use across our tables and chairs.",
-    customiseBodyTwo:
-      "When you are ready, we review your choices, confirm timelines, and answer questions so nothing is left ambiguous before production begins in our Vagharshapat workshop.",
-    customiseListAria: "What you can customise",
-    customiseList: [
-      "Shell and silhouette options",
-      "Wood stain and natural grain direction",
-      "Fabric or leather family and colour direction",
-      "Hardware and edge details where applicable",
-    ],
+    customiseLead:
+      "Build a custom chair with shell, wood type, and fabric selections.",
+    scrollHint: "↓ Scroll to rotate the chair",
+    configuratorCardTitle: "Configurator Preview",
+    configuratorCardBody:
+      "Real-time visual updates, summary panel, and saved design options.",
+    configuratorCardList: ["Chair shell", "Wood types", "Fabrics"],
+    sendRequest: "Send Request",
     contactTitle: "Contact Us",
     contactIntro: "Roots Furniture LLC",
     contactLabels: ["Address", "Phone", "Leadership", "Email"],
@@ -266,20 +261,15 @@ const translations = {
     environmentTitle: "Մենք հոգ ենք տանում շրջակա միջավայրի մասին։",
     environmentBody:
       "Մենք վարում ենք ցածր թափոններով արտադրություն․ փոշին և մնացորդները վերամշակվում են, արևային էներգիան ծածկում է էլեկտրաէներգիայի մի մասը, իսկ չորացման և կտրման գործընթացները կարգավորվում են, որպեսզի փայտը առավել արդյունավետ օգտագործվի։ Ավելի քիչ թափոն, ավելի քիչ սխալներ, և կահույք, որով կարող եք հպարտանալ։",
-    customiseEyebrow: "Կոնֆիգուրատոր",
     customiseTitle: "Անհատականացրեք ձեր աթոռը",
-    customiseSubtitle: "Կերպավորեք այն մանրուքները, որոնք կարևոր են ձեզ համար։",
-    customiseBodyOne:
-      "Ընտրեք նստատեղի և մեջքի նախընտրելի ձևերը, հաճարենու երանգներն ու մակերեսային մշակումը, և համադրեք պաստառապատումը ձեր տարածքին համապատասխան։ Յուրաքանչյուր համադրություն հիմնված է նույն ազնիվ կառուցվածքի վրա, որն օգտագործում ենք մեր սեղանների և աթոռների արտադրությունում։",
-    customiseBodyTwo:
-      "Երբ պատրաստ լինեք, մենք վերանայում ենք ձեր ընտրությունը, հաստատում ժամկետները և պատասխանում հարցերին, որպեսզի մինչև արտադրության մեկնարկը Վաղարշապատի մեր արհեստանոցում ամեն ինչ հստակ լինի։",
-    customiseListAria: "Ինչ կարող եք անհատականացնել",
-    customiseList: [
-      "Կորպուսի և ուրվագծի տարբերակներ",
-      "Փայտի երանգ և բնական հյուսվածքի ուղղություն",
-      "Գործվածքի կամ կաշվի ընտանիք և գունային ուղղություն",
-      "Մետաղական և եզրային դետալներ, որտեղ կիրառելի է",
-    ],
+    customiseLead:
+      "Ստեղծեք պատվերով աթոռ՝ ընտրելով կորպուսը, փայտի տեսակը և գործվածքը։",
+    scrollHint: "↓ Ոլորեք աթոռը՝ սքրոլ անելով",
+    configuratorCardTitle: "Կոնֆիգուրատորի նախադիտում",
+    configuratorCardBody:
+      "Թարմացումներ իրական ժամանակում, ամփոփ վահանակ և պահված տարբերակներ։",
+    configuratorCardList: ["Աթոռի կորպուս", "Փայտի տեսակներ", "Գործվածքներ"],
+    sendRequest: "Ուղարկել հարցում",
     contactTitle: "Կապ մեզ հետ",
     contactIntro: "Roots Furniture ՍՊԸ",
     contactLabels: ["Հասցե", "Հեռախոս", "Ղեկավարություն", "Էլ. փոստ"],
@@ -384,15 +374,13 @@ function applyLanguage(langCode) {
   setText(".environment-text-frame .section-title", copy.environmentTitle);
   setText(".environment-text-frame .section-subtitle", copy.environmentBody);
 
-  setText(".customise-eyebrow", copy.customiseEyebrow);
-  setText(".customise-copy-frame .section-title", copy.customiseTitle);
-  setText(".customise-copy-subtitle", copy.customiseSubtitle);
-  const customiseParagraphs = document.querySelectorAll(".customise-copy-body");
-  if (customiseParagraphs[0]) customiseParagraphs[0].textContent = copy.customiseBodyOne;
-  if (customiseParagraphs[1]) customiseParagraphs[1].textContent = copy.customiseBodyTwo;
-  const customiseList = document.querySelector(".customise-copy-list");
-  if (customiseList) customiseList.setAttribute("aria-label", copy.customiseListAria);
-  setList(".customise-copy-list li", copy.customiseList);
+  setText("#customization .chair-spin-left .section-title", copy.customiseTitle);
+  setText("#customization .chair-spin-left .section-subtitle", copy.customiseLead);
+  setText("#customization .scroll-hint", copy.scrollHint);
+  setText("#customization .chair-spin-right h3", copy.configuratorCardTitle);
+  setText("#customization .chair-spin-right .card > p.muted", copy.configuratorCardBody);
+  setList("#customization .chair-spin-right .card ul.muted li", copy.configuratorCardList);
+  setText("#customization .chair-spin-right .btn", copy.sendRequest);
 
   setText("#contact .section-title", copy.contactTitle);
   setText(".contact-intro", copy.contactIntro);

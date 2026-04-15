@@ -894,71 +894,66 @@ section.environment-section {
   border: 0;
 }
 
-.customise-showcase-copy-only {
-  display: block;
-  max-width: min(48rem, 100%);
-  margin-inline: auto;
+.chair-spin-section {
+  position: relative;
+  height: 500vh;
 }
 
-.customise-copy-frame {
+.chair-spin-sticky {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#chairCanvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.chair-spin-content {
+  position: relative;
+  z-index: 1;
   display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  height: fit-content;
-  max-width: 48rem;
-  padding: 1.35rem 1.85rem 1.5rem;
-  background: var(--white);
-  border-radius: 18px;
-  border: 1px solid var(--line);
-  border-left: 4px solid var(--beige-dark);
-  box-shadow: var(--shadow);
+  align-items: center;
+  height: 100%;
+  padding: 0 5vw;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
-.customise-eyebrow {
-  margin: 0 0 0.5rem;
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: var(--beige-dark);
+.chair-spin-left {
+  flex: 1;
+  max-width: 36rem;
 }
 
-.customise-copy-frame .section-title {
-  margin-bottom: 0.8rem;
-  line-height: 1.12;
+.chair-spin-left .section-title {
+  margin-bottom: 0.75rem;
 }
 
-.customise-copy-subtitle {
-  margin-bottom: 0.85rem;
-  max-width: none;
-  line-height: 1.45;
-}
-
-.customise-copy-body {
-  margin: 0;
-  color: var(--text);
-  line-height: 1.55;
-  font-size: 1.02rem;
-}
-
-.customise-copy-frame .customise-copy-body + .customise-copy-body {
-  margin-top: 1rem;
-}
-
-.customise-copy-list {
-  margin: 1.2rem 0 0;
-  padding-left: 1.15rem;
-  color: var(--text);
-  line-height: 1.45;
-  font-size: 0.98rem;
-}
-
-.customise-copy-list li {
-  margin-bottom: 0.25rem;
-}
-
-.customise-copy-list li:last-child {
+.chair-spin-left .section-subtitle {
   margin-bottom: 0;
+}
+
+.chair-spin-right {
+  flex: 0 0 360px;
+}
+
+.chair-spin-right .card {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(6px);
+}
+
+.scroll-hint {
+  font-size: 0.8rem;
+  color: #8a7a60;
+  margin-top: 1rem;
 }
 
 .highlight {
@@ -1066,10 +1061,21 @@ section.environment-section {
     height: auto;
   }
 
-  .customise-copy-frame {
-    margin-left: 0;
-    margin-inline: auto;
-    max-width: min(48rem, 100%);
+  .chair-spin-content {
+    flex-direction: column;
+    justify-content: center;
+    padding: 1.25rem 5vw;
+    gap: 1.5rem;
+  }
+
+  .chair-spin-right {
+    flex: 1 1 auto;
+    width: 100%;
+    max-width: 360px;
+  }
+
+  .chair-spin-section {
+    height: 400vh;
   }
 
   .class-grid {
