@@ -95,7 +95,6 @@ const translations = {
       ["Solar Power", "Zero electricity cost"],
       ["Smart Kilns", "Remote monitoring"],
     ],
-    stripItems: ["Certifications", "Acba Leasing Partner", "Export to Russia", "Sustainable Production"],
     peopleTitle: ["Meet", "Our", "People"],
     peopleSubtitle: "The hands, habits, and humour<br />behind every piece.",
     productsTitle: "Product Categories",
@@ -209,7 +208,6 @@ const translations = {
       ["Արևային էներգիա", "Էլեկտրաէներգիայի զրոյական ծախս"],
       ["Խելացի չորանոցներ", "Հեռավար վերահսկում"],
     ],
-    stripItems: ["Սերտիֆիկատներ", "Acba Leasing գործընկեր", "Արտահանում Ռուսաստան", "Կայուն արտադրություն"],
     peopleTitle: ["Ծանոթացեք", "Մեր", "Մարդկանց"],
     peopleSubtitle: "Ձեռքերը, սովորույթներն ու հումորը,<br />որոնք կանգնած են յուրաքանչյուր արտադրանքի հետևում։",
     productsTitle: "Ապրանքների կատեգորիաներ",
@@ -360,8 +358,6 @@ function applyLanguage(langCode) {
     if (title) title.textContent = cardCopy[0];
     if (subtitle) subtitle.textContent = cardCopy[1];
   });
-  setList(".strip-items > div", copy.stripItems);
-
   setList(".people-flyin-txt-cont .people-flyIn", [
     copy.peopleTitle[0],
     copy.peopleTitle[1],
