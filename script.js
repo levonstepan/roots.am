@@ -154,7 +154,6 @@ const translations = {
     environmentTitle: "We Care About the Environment.",
     environmentBody:
       "We run a low-waste shop: dust and offcuts feed recovery instead of the trash pile, solar offsets a real share of our power, and we tune kilns and cutting so timber goes further. Less scrap, less guesswork-and furniture you can still be proud to put in a room.",
-    customiseAria: "Chair customization preview animation",
     customiseEyebrow: "Configurator",
     customiseTitle: "Customise Your Chair",
     customiseSubtitle: "Shape the details that matter.",
@@ -269,7 +268,6 @@ const translations = {
     environmentTitle: "Մենք հոգ ենք տանում շրջակա միջավայրի մասին։",
     environmentBody:
       "Մենք վարում ենք ցածր թափոններով արտադրություն․ փոշին և մնացորդները վերամշակվում են, արևային էներգիան ծածկում է էլեկտրաէներգիայի մի մասը, իսկ չորացման և կտրման գործընթացները կարգավորվում են, որպեսզի փայտը առավել արդյունավետ օգտագործվի։ Ավելի քիչ թափոն, ավելի քիչ սխալներ, և կահույք, որով կարող եք հպարտանալ։",
-    customiseAria: "Աթոռի անհատականացման նախադիտում",
     customiseEyebrow: "Կոնֆիգուրատոր",
     customiseTitle: "Անհատականացրեք ձեր աթոռը",
     customiseSubtitle: "Կերպավորեք այն մանրուքները, որոնք կարևոր են ձեզ համար։",
@@ -390,8 +388,6 @@ function applyLanguage(langCode) {
   setText(".environment-text-frame .section-title", copy.environmentTitle);
   setText(".environment-text-frame .section-subtitle", copy.environmentBody);
 
-  const customVideo = document.querySelector(".customise-showcase-video");
-  if (customVideo) customVideo.setAttribute("aria-label", copy.customiseAria);
   setText(".customise-eyebrow", copy.customiseEyebrow);
   setText(".customise-copy-frame .section-title", copy.customiseTitle);
   setText(".customise-copy-subtitle", copy.customiseSubtitle);
