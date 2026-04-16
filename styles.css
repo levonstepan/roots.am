@@ -1144,8 +1144,3 @@ section.environment-section {
   flex: 0 0 340px;
 }
 
-/* Make sketches bg only visible during customization section */
-.sketches-bg.hidden {
-  opacity: 0;
-  transition: opacity 0.8s ease;
-}

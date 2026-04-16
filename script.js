@@ -419,7 +419,7 @@ if (languageButtons.length > 0) {
   const TOTAL = 20;
   const DURATION = 45;
   const ROWS = 3;
-  const rowTops = [12, 42, 68];
+  const rowTops = [10, 40, 68];
 
   for (let i = 0; i < TOTAL; i++) {
     const img = document.createElement('img');
@@ -441,15 +441,5 @@ if (languageButtons.length > 0) {
     `;
 
     container.appendChild(img);
-  }
-
-  const section = document.getElementById('customization');
-  if (section) {
-    const io = new IntersectionObserver((entries) => {
-      entries.forEach((e) => {
-        container.classList.toggle('hidden', !e.isIntersecting);
-      });
-    }, { threshold: 0.05 });
-    io.observe(section);
   }
 })();
