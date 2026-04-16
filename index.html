@@ -458,7 +458,7 @@
           if (!section) return;
           const scrolled = Math.max(0, -section.getBoundingClientRect().top);
           const total = section.offsetHeight - window.innerHeight;
-          targetRot = Math.min(1, total > 0 ? scrolled / total : 0) * Math.PI * 2;
+          targetRot = Math.min(1, total > 0 ? scrolled / total : 0) * Math.PI * -1;
         },
         { passive: true }
       );
