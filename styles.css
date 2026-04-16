@@ -409,6 +409,13 @@ img {
   max-width: 420px;
 }
 
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  align-items: center;
+}
+
 .btn {
   display: inline-flex;
   align-items: center;
