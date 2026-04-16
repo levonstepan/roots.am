@@ -13,19 +13,27 @@
   <link rel="stylesheet" href="styles.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 </head>
-<body>
+<body class="privacy-policy-page">
   <header class="site-header">
     <div class="container nav">
       <a class="brand" href="index.html">Roots Furniture <span>Acobian Furniture</span></a>
-      <button class="nav-toggle" aria-label="Toggle navigation">Menu</button>
-      <nav class="nav-links">
-        <a href="index.html#home">Home</a>
-        <a href="index.html#story">About</a>
-        <a href="index.html#products">Products</a>
-        <a href="index.html#customization">Customization</a>
-        <a href="index.html#people">People</a>
-        <a href="index.html#contact">Contact</a>
-      </nav>
+      <div class="nav-actions">
+        <button class="nav-toggle" aria-label="Toggle navigation">Menu</button>
+        <div class="nav-right">
+          <nav class="nav-links">
+            <a href="index.html#home">Home</a>
+            <a href="index.html#story">About</a>
+            <a href="index.html#products">Products</a>
+            <a href="index.html#customization">Customization</a>
+            <a href="index.html#people">People</a>
+            <a href="index.html#contact">Contact</a>
+          </nav>
+          <div class="language-switch" aria-label="Language switch">
+            <button class="lang-btn is-active" type="button" data-lang="en">EN</button>
+            <button class="lang-btn" type="button" data-lang="hy">Հայ</button>
+          </div>
+        </div>
+      </div>
     </div>
   </header>
 
@@ -35,7 +43,7 @@
       <h1 class="section-title">Privacy Policy</h1>
       <p class="section-subtitle">Last updated: April 2026</p>
 
-      <div style="display: grid; gap: 2rem;">
+      <div class="privacy-sections" style="display: grid; gap: 2rem;">
 
         <div>
           <h3>1. Who we are</h3>

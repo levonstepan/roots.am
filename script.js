@@ -92,6 +92,73 @@ const translations = {
     aboutHeading: "Our story",
     aboutLead: "Video from our workshop and team — the same roots behind every piece.",
     aboutVideoTitle: "Roots Furniture — our story",
+    privacyPageTitle: "Privacy Policy",
+    privacyBack: "← Back",
+    privacySubtitle: "Last updated: April 2026",
+    privacySectionTitles: [
+      "1. Who we are",
+      "2. What data we collect",
+      "3. How we use your data",
+      "4. Data retention",
+      "5. Your rights",
+      "6. Security",
+      "7. Changes to this policy",
+      "8. Contact",
+    ],
+    privacySectionBodies: [
+      "Roots Furniture LLC (also known as Acobian Furniture) is a furniture manufacturer based at 20/1 Ter-Gabrielyan Street, Vagharshapat, Armenia. We operate the website roots.am. You can reach us at info@roots.am.",
+      "We collect only the information you voluntarily provide — such as your name, email address, and message — when you contact us through our website. We do not use tracking cookies, run advertising, or collect data automatically beyond standard server logs.",
+      "Your information is used solely to respond to your enquiry or process your order. We do not sell, share, or rent your personal data to any third party.",
+      "We retain your contact information only as long as necessary to fulfil your request or as required by Armenian law. You may request deletion of your data at any time by emailing info@roots.am.",
+      "You have the right to access, correct, or delete any personal data we hold about you. To exercise these rights, contact us at info@roots.am and we will respond within 30 days.",
+      "We take reasonable technical measures to protect your data. Our website uses HTTPS encryption for all data in transit.",
+      "We may update this policy occasionally. The date at the top of this page will always reflect the most recent version.",
+      "For any privacy-related questions, email us at <a href=\"mailto:info@roots.am\" style=\"color: var(--accent);\">info@roots.am</a> or call +374 91 665520.",
+    ],
+    legalNotesPageTitle: "Legal Notes",
+    legalNotesBack: "← Back",
+    legalNotesSubtitle: "Last updated: April 2026",
+    legalNotesSectionTitles: [
+      "Company information",
+      "Intellectual property",
+      "Accuracy of information",
+      "Limitation of liability",
+      "Governing law",
+    ],
+    legalNotesSectionBodies: [
+      "Roots Furniture LLC (Acobian Furniture) is a furniture company based at 20/1 Ter-Gabrielyan Street, Vagharshapat, Armenia. You can reach us by email and phone as listed on the website.",
+      "All content on this website — including text, images, product designs, technical drawings, and 3D models — is the property of Roots Furniture LLC and is protected under applicable Armenian and international copyright law. Reproduction or use without written permission is prohibited.",
+      "We make every effort to ensure the information on this site is accurate and up to date. However, product specifications, pricing, and availability may change without notice. Always confirm details with us directly before placing an order.",
+      "Roots Furniture LLC shall not be liable for any indirect or consequential loss arising from the use of this website or reliance on any information contained herein.",
+      "These legal notes are governed by the laws of the Republic of Armenia. Any disputes shall be subject to the jurisdiction of the competent courts of Armenia.",
+    ],
+    termsPageTitle: "Terms & Conditions",
+    termsBack: "← Back",
+    termsSubtitle: "Last updated: April 2026",
+    termsSectionTitles: [
+      "1. Orders & confirmation",
+      "2. Pricing",
+      "3. Production timelines",
+      "4. Payment",
+      "5. Delivery & pickup",
+      "6. Returns & cancellations",
+      "7. Warranty",
+      "8. Damaged items",
+      "9. Governing law",
+      "10. Contact",
+    ],
+    termsSectionBodies: [
+      "All orders are subject to written confirmation by Roots Furniture LLC. An order is considered accepted only once you receive a formal confirmation from us via email. We reserve the right to decline any order at our discretion.",
+      "All prices are quoted in Armenian Dram (AMD) unless otherwise stated. Prices are subject to change without notice. The price confirmed in your order confirmation is the price that applies to your order.",
+      "Lead times are provided as estimates and may vary depending on order complexity, materials, and workshop capacity. We will keep you informed of any significant delays.",
+      "A deposit of 50% is required to begin production. The remaining balance is due before delivery or pickup. Accepted payment methods will be confirmed at the time of order.",
+      "Customers may collect finished items from our workshop in Vagharshapat. Delivery arrangements can be discussed and are subject to additional fees depending on location. Risk of damage passes to the customer upon collection or delivery.",
+      "Custom and made-to-order items cannot be returned unless they arrive with a manufacturing defect. Cancellations made after production has begun may forfeit the deposit. Please contact us as early as possible if your plans change.",
+      "Our furniture carries a 12-month warranty against manufacturing defects under normal use conditions. This does not cover damage caused by misuse, improper care, or natural wear and tear. To make a warranty claim, contact <a href=\"mailto:info@roots.am\" style=\"color: var(--accent);\">info@roots.am</a> with photos and your order details.",
+      "Any damage must be reported within 48 hours of receiving your order, with photographic evidence. Claims made after this period may not be accepted.",
+      "These terms are governed by the laws of the Republic of Armenia. Disputes will be resolved in the competent courts of Armenia.",
+      "For any questions about these terms, reach us at <a href=\"mailto:info@roots.am\" style=\"color: var(--accent);\">info@roots.am</a> or +374 91 665520.",
+    ],
     proofTitle: "Proof & Trust",
     proofSubtitle: "Supported by Acba Leasing · Exporting to Russia · Exhibitions · Certifications",
     proofCards: [
@@ -197,6 +264,73 @@ const translations = {
     aboutHeading: "Մեր պատմությունը",
     aboutLead: "Տեսանյութ մեր արհեստանոցից և թիմից՝ նույն արմատները յուրաքանչյուր արտադրանքի հիմքում։",
     aboutVideoTitle: "Roots Furniture — մեր պատմությունը",
+    privacyPageTitle: "Գաղտնիության քաղաքականություն",
+    privacyBack: "← Վերադառնալ",
+    privacySubtitle: "Վերջին թարմացումը՝ ապրիլ 2026",
+    privacySectionTitles: [
+      "1. Ով ենք մենք",
+      "2. Ի՞նչ տվյալներ ենք հավաքում",
+      "3. Ինչպե՞ս ենք օգտագործում ձեր տվյալները",
+      "4. Տվյալների պահպանման ժամկետ",
+      "5. Ձեր իրավունքները",
+      "6. Անվտանգություն",
+      "7. Այս քաղաքականության փոփոխություններ",
+      "8. Կապ",
+    ],
+    privacySectionBodies: [
+      "Roots Furniture LLC-ն (նաև հայտնի որպես Acobian Furniture) կահույք արտադրող ընկերություն է, որը գտնվում է 20/1 Ter-Gabrielyan Street, Վաղարշապատ, Հայաստան։ Մենք գործում ենք roots.am կայքում։ Կարող եք կապ հաստատել մեզ հետ info@roots.am հասցեով։",
+      "Մենք հավաքում ենք միայն այն տվյալները, որոնք դուք կամավոր տրամադրում եք՝ օրինակ՝ ձեր անունը, էլ․ հասցեն և հաղորդագրությունը, երբ մեզ հետ կապ եք հաստատում մեր կայքի միջոցով։ Մենք չենք օգտագործում հետևելու (tracking) քուքիներ, չենք վարում գովազդ, և տվյալներ չենք հավաքում ավտոմատ կերպով՝ սովորական սերվերի լոգերից դուրս։",
+      "Ձեր տվյալներն օգտագործվում են բացառապես ձեր հարցմանը պատասխանելու կամ ձեր պատվերը մշակելու համար։ Մենք չենք վաճառում, չենք փոխանցում և չենք վարձակալում ձեր անձնական տվյալները որևէ երրորդ կողմի։",
+      "Մենք պահպանում ենք ձեր կոնտակտային տվյալները միայն այնքան ժամանակ, որքան անհրաժեշտ է ձեր հարցումը բավարարելու համար կամ ինչպես պահանջում է Հայաստանի օրենքը։ Դուք ցանկացած պահի կարող եք պահանջել ձեր տվյալների ջնջում՝ info@roots.am էլ․ հասցեով գրելով։",
+      "Դուք ունեք ձեր մասին պահվող անձնական տվյալները հասանելի դարձնելու, ուղղելու կամ ջնջելու իրավունք։ Այս իրավունքները կիրառելու համար կապ հաստատեք info@roots.am հասցեով, և մենք կպատասխանենք 30 օրվա ընթացքում։",
+      "Մենք ձեռնարկում ենք ողջամիտ տեխնիկական միջոցներ՝ ձեր տվյալները պաշտպանելու համար։ Մեր կայքը օգտագործում է HTTPS կոդավորումը բոլոր տվյալների փոխանցման ընթացքում։",
+      "Մենք կարող ենք ժամանակ առ ժամանակ թարմացնել այս քաղաքականությունը։ Էջի վերևում նշված ամսաթիվը միշտ կհամապատասխանի առավել նոր տարբերակին։",
+      "Գաղտնիությանը վերաբերող ցանկացած հարցի համար էլ․ փոստ գրեք մեզ՝ <a href=\"mailto:info@roots.am\" style=\"color: var(--accent);\">info@roots.am</a> կամ զանգահարեք +374 91 665520։",
+    ],
+    legalNotesPageTitle: "Իրավական ծանուցումներ",
+    legalNotesBack: "← Վերադառնալ",
+    legalNotesSubtitle: "Վերջին թարմացումը՝ ապրիլ 2026",
+    legalNotesSectionTitles: [
+      "Ընկերության տվյալներ",
+      "Հեղինակային իրավունքներ",
+      "Տեղեկատվության ճշտություն",
+      "Պատասխանատվության սահմանափակում",
+      "Կիրառելի իրավունք",
+    ],
+    legalNotesSectionBodies: [
+      "Roots Furniture LLC-ն (Acobian Furniture) կահույքի ընկերություն է, որը գտնվում է 20/1 Ter-Gabrielyan Street, Վաղարշապատ, Հայաստան։ Կապ հաստատելու համար կարող եք օգտագործել կայքում նշված էլ․ փոստն ու հեռախոսը։",
+      "Այս կայքի ամբողջ բովանդակությունը՝ ներառյալ տեքստերը, պատկերները, արտադրանքի նախագծերը, տեխնիկական գծագրերը և 3D մոդելները պատկանում են Roots Furniture LLC-ին և պաշտպանված են ՀՀ և միջազգային հեղինակային իրավունքի նորմերով։ Վերարտադրումը կամ օգտագործումը՝ առանց գրավոր թույլտվության արգելված է։",
+      "Մենք անում ենք ամեն ինչ՝ այս կայքում տեղադրված տեղեկատվությունը ճշգրիտ և արդիական պահելու համար։ Սակայն արտադրանքի բնութագրերը, գները և հասանելիությունը կարող են փոխվել՝ առանց նախապես ծանուցելու։ Պատվեր կատարելուց առաջ մանրամասները միշտ ճշտեք մեզ հետ ուղղակիորեն։",
+      "Roots Furniture LLC-ն չի կրելու որևէ անուղղակի կամ հետևանքային վնասի պատասխանատվություն՝ այս կայքի օգտագործման կամ սույն կայքում տեղադրված տեղեկատվության վրա հենվելու արդյունքում։",
+      "Սույն իրավական ծանուցումները կարգավորվում են Հայաստանի Հանրապետության օրենքներով։ Ցանկացած վեճ ենթակա է Հայաստանի իրավասու դատարանների իրավասությանը։",
+    ],
+    termsPageTitle: "Պայմաններ և դրույթներ",
+    termsBack: "← Վերադառնալ",
+    termsSubtitle: "Վերջին թարմացումը՝ ապրիլ 2026",
+    termsSectionTitles: [
+      "1. Պատվերներ և հաստատում",
+      "2. Գներ",
+      "3. Արտադրության ժամկետներ",
+      "4. Վճարում",
+      "5. Առաքում և ինքնաառաքում",
+      "6. Վերադարձ և չեղարկումներ",
+      "7. Երաշխիք",
+      "8. Վնասված ապրանքներ",
+      "9. Կիրառելի իրավունք",
+      "10. Կապ",
+    ],
+    termsSectionBodies: [
+      "Բոլոր պատվերները ենթակա են Roots Furniture LLC-ի կողմից գրավոր հաստատման։ Պատվերը համարվում է ընդունված միայն այն պահից, երբ ստանում եք մեր կողմից էլ․ փոստով պաշտոնական հաստատումը։ Մենք իրավունք ենք վերապահում մեր հայեցողությամբ հրաժարվել ցանկացած պատվերից։",
+      "Բոլոր գները նշվում են Հայաստանի դրամով (AMD), եթե այլ բան չի նշված։ Գները կարող են փոխվել առանց նախնական ծանուցման։ Ձեր պատվերի հաստատման մեջ նշված գինը կիրառելի է ձեր պատվերի համար։",
+      "Առաջադրված ժամկետները ներկայացվում են որպես գնահատականներ և կարող են տարբերվել՝ կախված պատվերի բարդությունից, նյութերից և արտադրական հզորությունից։ Մենք կտեղեկացնենք ցանկացած էական ուշացման մասին։",
+      "Արտադրությունը սկսելու համար պահանջվում է 50% նախավճար։ Մնացորդը վճարվում է մինչև առաքումը կամ ինքնաառաքումը։ Վճարման ընդունված եղանակները կհաստատվեն պատվերի պահին։",
+      "Հաճախորդները կարող են պատրաստի իրերը վերցնել մեր արտադրամասից Վաղարշապատում։ Առաքումը կարող է քննարկվել և կախված գտնվելու վայրից կարող է ներառել լրացուցիչ վճարներ։ Վնասի ռիսկը փոխանցվում է հաճախորդին՝ վերցնելու կամ առաքման պահից։",
+      "Պատվերով և պատրաստված-հատուկ արտադրանքները չեն վերադարձվում, եթե չեն ժամանում արտադրական արատի պատճառով։ Երբ արտադրությունը արդեն սկսվել է, չեղարկումների դեպքում կարող է կորսվել նախավճարը։ Եթե ձեր ծրագրերը փոխվում են, խնդրում ենք հնարավորինս շուտ կապ հաստատել մեզ հետ։",
+      "Մեր կահույքը ունի 12 ամսվա երաշխիք՝ արտադրական արատների դեպքում՝ բնականոն օգտագործման պայմաններում։ Այն չի ծածկում ոչ պատշաճ օգտագործման, ոչ ճիշտ խնամքի կամ բնական մաշվածության հետևանքով առաջացած վնասը։ Երաշխիքային պահանջ ներկայացնելու համար կապ հաստատեք՝ <a href=\"mailto:info@roots.am\" style=\"color: var(--accent);\">info@roots.am</a> ուղարկելով նկարներ և ձեր պատվերի տվյալները։",
+      "Ցանկացած վնաս պետք է հաղորդվի պատվերը ստանալուց հետո 48 ժամվա ընթացքում՝ լուսանկարային ապացույցներով։ Այս ժամկետից հետո ներկայացված պահանջները կարող են չընդունվել։",
+      "Սույն պայմանները կարգավորվում են Հայաստանի Հանրապետության օրենքներով։ Վեճերը կլուծվեն իրավասու դատարաններում։",
+      "Սույն պայմանների վերաբերյալ ցանկացած հարցի համար կապ հաստատեք՝ <a href=\"mailto:info@roots.am\" style=\"color: var(--accent);\">info@roots.am</a> կամ +374 91 665520 հեռախոսահամարով։",
+    ],
     proofTitle: "Վստահություն և ապացույցներ",
     proofSubtitle: "Աջակցվում է Acba Leasing-ի կողմից · Արտահանում Ռուսաստան · Ցուցահանդեսներ · Սերտիֆիկատներ",
     proofCards: [
@@ -343,6 +477,49 @@ function applyLanguage(langCode) {
   if (aboutIframe && copy.aboutVideoTitle) {
     aboutIframe.setAttribute("title", copy.aboutVideoTitle);
   }
+
+  // Legal / policy pages (privacy, legal notes, terms)
+  setText(".privacy-policy-page .section-title", copy.privacyPageTitle);
+  setText(".privacy-policy-page .section-subtitle", copy.privacySubtitle);
+  setText(".privacy-policy-page .btn.btn-outline", copy.privacyBack);
+  document
+    .querySelectorAll(".privacy-policy-page .privacy-sections h3")
+    .forEach((h, i) => {
+      if (copy.privacySectionTitles?.[i] !== undefined) h.textContent = copy.privacySectionTitles[i];
+    });
+  document
+    .querySelectorAll(".privacy-policy-page .privacy-sections p.muted")
+    .forEach((p, i) => {
+      if (copy.privacySectionBodies?.[i] !== undefined) p.innerHTML = copy.privacySectionBodies[i];
+    });
+
+  setText(".legal-notes-page .section-title", copy.legalNotesPageTitle);
+  setText(".legal-notes-page .section-subtitle", copy.legalNotesSubtitle);
+  setText(".legal-notes-page .btn.btn-outline", copy.legalNotesBack);
+  document
+    .querySelectorAll(".legal-notes-page .legal-notes-sections h3")
+    .forEach((h, i) => {
+      if (copy.legalNotesSectionTitles?.[i] !== undefined) h.textContent = copy.legalNotesSectionTitles[i];
+    });
+  document
+    .querySelectorAll(".legal-notes-page .legal-notes-sections p.muted")
+    .forEach((p, i) => {
+      if (copy.legalNotesSectionBodies?.[i] !== undefined) p.innerHTML = copy.legalNotesSectionBodies[i];
+    });
+
+  setText(".terms-and-conditions-page .section-title", copy.termsPageTitle);
+  setText(".terms-and-conditions-page .section-subtitle", copy.termsSubtitle);
+  setText(".terms-and-conditions-page .btn.btn-outline", copy.termsBack);
+  document
+    .querySelectorAll(".terms-and-conditions-page .terms-sections h3")
+    .forEach((h, i) => {
+      if (copy.termsSectionTitles?.[i] !== undefined) h.textContent = copy.termsSectionTitles[i];
+    });
+  document
+    .querySelectorAll(".terms-and-conditions-page .terms-sections p.muted")
+    .forEach((p, i) => {
+      if (copy.termsSectionBodies?.[i] !== undefined) p.innerHTML = copy.termsSectionBodies[i];
+    });
 
   setText(".story-proof h3", copy.proofTitle);
   setText(".story-proof > p", copy.proofSubtitle);
