@@ -1092,3 +1092,38 @@ section.environment-section {
     display: inline-flex;
   }
 }
+
+/* -- Sketches drifting background -- */
+.sketches-bg {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.sketch-item {
+  position: absolute;
+  width: 260px;
+  opacity: 0;
+  will-change: transform;
+  animation: sketchDrift linear infinite;
+}
+
+@keyframes sketchDrift {
+  0%   { transform: translateX(-320px); opacity: 0; }
+  8%   { opacity: 0.08; }
+  90%  { opacity: 0.08; }
+  100% { transform: translateX(110vw);  opacity: 0; }
+}
+
+/* Chair spin -- right-side layout */
+.chair-spin-right {
+  flex: 0 0 340px;
+}
+
+/* Make sketches bg only visible during customization section */
+.sketches-bg.hidden {
+  opacity: 0;
+  transition: opacity 0.8s ease;
+}

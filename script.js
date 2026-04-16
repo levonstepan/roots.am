@@ -410,3 +410,46 @@ if (languageButtons.length > 0) {
   const savedLanguage = window.localStorage.getItem("siteLanguage") || "en";
   applyLanguage(savedLanguage);
 }
+
+// -- Drifting sketches background --
+(function () {
+  const container = document.getElementById('sketchesBg');
+  if (!container) return;
+
+  const TOTAL = 20;
+  const DURATION = 45;
+  const ROWS = 3;
+  const rowTops = [12, 42, 68];
+
+  for (let i = 0; i < TOTAL; i++) {
+    const img = document.createElement('img');
+    img.className = 'sketch-item';
+    img.src = `./Images/Sketches/sketch_${String(i + 1).padStart(2, '0')}.png`;
+
+    const row = i % ROWS;
+    const top = rowTops[row] + (Math.random() * 6 - 3);
+    const scale = 0.8 + Math.random() * 0.45;
+    const dur = DURATION + Math.random() * 12;
+    const delay = -(i / TOTAL) * dur;
+
+    img.style.cssText = `
+      top: ${top}vh;
+      left: -320px;
+      width: ${260 * scale}px;
+      animation-duration: ${dur}s;
+      animation-delay: ${delay}s;
+    `;
+
+    container.appendChild(img);
+  }
+
+  const section = document.getElementById('customization');
+  if (section) {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => {
+        container.classList.toggle('hidden', !e.isIntersecting);
+      });
+    }, { threshold: 0.05 });
+    io.observe(section);
+  }
+})();
