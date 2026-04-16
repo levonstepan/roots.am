@@ -166,12 +166,9 @@ const translations = {
     contactIntro: "Roots Furniture LLC",
     contactLabels: ["Address", "Phone", "Leadership", "Email"],
     contactLeadership: "Levon Stepanyan - CEO of Roots LLC",
-    footerHeads: ["Purchasing", "Resources", "Company"],
-    footerCols: [
-      ["How to order", "Production timelines", "Delivery & pickup", "Warranty", "Returns", "Damaged items", "Cancellations"],
-      ["Product care", "Wood & finishes guide", "Catalog (coming soon)"],
-      ["Careers", "Privacy policy", "Legal notes", "Terms & conditions"],
-    ],
+    footerCompanyTitle: "Company",
+    footerCompanyLinks: ["Privacy policy", "Legal notes", "Terms & conditions"],
+    footerFollowTitle: "Follow Us",
     footerBottom: "© 2026 Roots Furniture · Acobian Furniture",
     footerTagline: "Made with ❤ in Armenia",
   },
@@ -274,12 +271,9 @@ const translations = {
     contactIntro: "Roots Furniture ՍՊԸ",
     contactLabels: ["Հասցե", "Հեռախոս", "Ղեկավարություն", "Էլ. փոստ"],
     contactLeadership: "Լևոն Ստեփանյան - Roots LLC-ի տնօրեն",
-    footerHeads: ["Գնումներ", "Ռեսուրսներ", "Ընկերություն"],
-    footerCols: [
-      ["Ինչպես պատվիրել", "Արտադրության ժամկետներ", "Առաքում և ինքնաառաքում", "Երաշխիք", "Վերադարձ", "Վնասված ապրանքներ", "Չեղարկումներ"],
-      ["Ապրանքի խնամք", "Փայտի և երանգների ուղեցույց", "Կատալոգ (շուտով)"],
-      ["Աշխատանք", "Գաղտնիության քաղաքականություն", "Իրավական նշումներ", "Պայմաններ և դրույթներ"],
-    ],
+    footerCompanyTitle: "Ընկերություն",
+    footerCompanyLinks: ["Գաղտնիության քաղաքականություն", "Իրավական նշումներ", "Պայմաններ և դրույթներ"],
+    footerFollowTitle: "Հետևեք մեզ",
     footerBottom: "© 2026 Roots Furniture · Acobian Furniture",
     footerTagline: "Ստեղծված է ❤-ով Հայաստանում",
   },
@@ -395,15 +389,17 @@ function applyLanguage(langCode) {
   setList(".contact-item h3", copy.contactLabels);
   setText(".contact-item:nth-of-type(3) p", copy.contactLeadership);
 
-  setList(".footer-grid h4", copy.footerHeads);
-  document.querySelectorAll(".footer-grid > div").forEach((column, colIndex) => {
-    const items = copy.footerCols[colIndex];
-    if (!items) return;
-    column.querySelectorAll("li").forEach((item, itemIndex) => {
-      if (items[itemIndex] !== undefined) {
-        item.textContent = items[itemIndex];
-      }
-    });
+  setText(".footer-company-title", copy.footerCompanyTitle);
+  setText(".footer-follow-title", copy.footerFollowTitle);
+  const footerCompanyLinks = document.querySelectorAll(".footer-company-links li");
+  footerCompanyLinks.forEach((item, itemIndex) => {
+    if (copy.footerCompanyLinks[itemIndex] === undefined) return;
+    const anchor = item.querySelector("a");
+    if (anchor) {
+      anchor.textContent = copy.footerCompanyLinks[itemIndex];
+    } else {
+      item.textContent = copy.footerCompanyLinks[itemIndex];
+    }
   });
 
   setText(".footer-bottom > span:first-child", copy.footerBottom);

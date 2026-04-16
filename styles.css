@@ -1015,6 +1015,16 @@ section.environment-section {
   color: rgba(255, 255, 255, 0.8);
 }
 
+.footer-company-links a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-company-links a:hover {
+  color: #fff;
+}
+
 .footer-bottom {
   display: grid;
   grid-template-columns: 1fr auto;
