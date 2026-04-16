@@ -169,7 +169,7 @@
           const scale = 1.6 / Math.max(size.x, size.y, size.z);
           chair.scale.setScalar(scale);
           chair.position.sub(center.multiplyScalar(scale));
-          chair.position.y += 0.05;
+          chair.position.y -= 0.08;
           scene.add(chair);
         },
         null,
