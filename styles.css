@@ -941,15 +941,6 @@ section.environment-section {
   margin-bottom: 0;
 }
 
-.chair-spin-right {
-  flex: 0 0 360px;
-}
-
-.chair-spin-right .card {
-  background: rgba(255, 255, 255, 0.92);
-  backdrop-filter: blur(6px);
-}
-
 .scroll-hint {
   font-size: 0.8rem;
   color: #8a7a60;
@@ -1062,16 +1053,10 @@ section.environment-section {
   }
 
   .chair-spin-content {
-    flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     padding: 1.25rem 5vw;
-    gap: 1.5rem;
-  }
-
-  .chair-spin-right {
-    flex: 1 1 auto;
-    width: 100%;
-    max-width: 360px;
+    padding-top: 15vh;
+    gap: 1rem;
   }
 
   .chair-spin-section {

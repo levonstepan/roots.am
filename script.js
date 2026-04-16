@@ -157,11 +157,6 @@ const translations = {
     customiseLead:
       "Build a custom chair with shell, wood type, and fabric selections.",
     scrollHint: "↓ Scroll to rotate the chair",
-    configuratorCardTitle: "Configurator Preview",
-    configuratorCardBody:
-      "Real-time visual updates, summary panel, and saved design options.",
-    configuratorCardList: ["Chair shell", "Wood types", "Fabrics"],
-    sendRequest: "Send Request",
     contactTitle: "Contact Us",
     contactIntro: "Roots Furniture LLC",
     contactLabels: ["Address", "Phone", "Leadership", "Email"],
@@ -265,11 +260,6 @@ const translations = {
     customiseLead:
       "Ստեղծեք պատվերով աթոռ՝ ընտրելով կորպուսը, փայտի տեսակը և գործվածքը։",
     scrollHint: "↓ Ոլորեք աթոռը՝ սքրոլ անելով",
-    configuratorCardTitle: "Կոնֆիգուրատորի նախադիտում",
-    configuratorCardBody:
-      "Թարմացումներ իրական ժամանակում, ամփոփ վահանակ և պահված տարբերակներ։",
-    configuratorCardList: ["Աթոռի կորպուս", "Փայտի տեսակներ", "Գործվածքներ"],
-    sendRequest: "Ուղարկել հարցում",
     contactTitle: "Կապ մեզ հետ",
     contactIntro: "Roots Furniture ՍՊԸ",
     contactLabels: ["Հասցե", "Հեռախոս", "Ղեկավարություն", "Էլ. փոստ"],
@@ -377,10 +367,6 @@ function applyLanguage(langCode) {
   setText("#customization .chair-spin-left .section-title", copy.customiseTitle);
   setText("#customization .chair-spin-left .section-subtitle", copy.customiseLead);
   setText("#customization .scroll-hint", copy.scrollHint);
-  setText("#customization .chair-spin-right h3", copy.configuratorCardTitle);
-  setText("#customization .chair-spin-right .card > p.muted", copy.configuratorCardBody);
-  setList("#customization .chair-spin-right .card ul.muted li", copy.configuratorCardList);
-  setText("#customization .chair-spin-right .btn", copy.sendRequest);
 
   setText("#contact .section-title", copy.contactTitle);
   setText(".contact-intro", copy.contactIntro);
