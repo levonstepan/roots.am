@@ -802,7 +802,7 @@ section.environment-section {
   box-shadow: var(--shadow);
   padding: 1.25rem;
   display: grid;
-  grid-template-rows: 96px auto;
+  grid-template-rows: minmax(96px, auto) auto;
   gap: 1rem;
   align-content: start;
 }
@@ -827,7 +827,9 @@ section.environment-section {
   margin: 0;
   opacity: 0.9;
   font-weight: 500;
-  white-space: nowrap;
+  white-space: normal;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
   font-size: 0.95rem;
 }
 
