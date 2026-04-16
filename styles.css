@@ -174,7 +174,6 @@ section#people .people-line-four {
   animation: peopleLineFourFly 2.25s ease-out 0.85s forwards;
 }
 
-html[lang="hy"] section#people .people-line-two,
 html[lang="hy"] section#people .people-line-three {
   display: none;
 }
