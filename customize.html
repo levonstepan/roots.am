@@ -24,8 +24,11 @@
     <header class="site-header">
       <div class="container nav">
         <a class="brand" href="index.html">
-          Roots Furniture
-          <span>Acobian Furniture</span>
+          <img class="brand-logo" src="./Images/Logo.jpeg" alt="Roots logo" />
+          <span class="brand-text">
+            Roots Furniture
+            <span>Acobian Furniture</span>
+          </span>
         </a>
         <button class="nav-toggle" aria-label="Toggle navigation">Menu</button>
         <nav class="nav-links">
@@ -149,8 +152,12 @@
         0.01,
         100
       );
-      camera.position.set(0, 0.3, 3.5);
-      camera.lookAt(0, 0.0, 0);
+      // Tuning values: edit these numbers to adjust framing.
+      const CAMERA_POS = { x: 0, y: 0.3, z: 3.5 };
+      const CAMERA_LOOK_AT = { x: 0, y: 0.0, z: 0 };
+      const CHAIR_Y_OFFSET = -15.0;
+      camera.position.set(CAMERA_POS.x, CAMERA_POS.y, CAMERA_POS.z);
+      camera.lookAt(CAMERA_LOOK_AT.x, CAMERA_LOOK_AT.y, CAMERA_LOOK_AT.z);
 
       scene.add(new THREE.AmbientLight(0xfff8f0, 1.5));
       const key = new THREE.DirectionalLight(0xfff5e0, 3.0);
@@ -187,7 +194,7 @@
           const scale = 1.6 / Math.max(size.x, size.y, size.z);
           chair.scale.setScalar(scale);
           chair.position.sub(center.multiplyScalar(scale));
-          chair.position.y -= 15.0;
+          chair.position.y += CHAIR_Y_OFFSET;
           scene.add(chair);
         },
         null,

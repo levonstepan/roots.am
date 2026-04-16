@@ -24,8 +24,11 @@
     <header class="site-header">
       <div class="container nav">
         <a class="brand" href="index.html">
-          Roots Furniture
-          <span>Acobian Furniture</span>
+          <img class="brand-logo" src="./Images/Logo.jpeg" alt="Roots logo" />
+          <span class="brand-text">
+            Roots Furniture
+            <span>Acobian Furniture</span>
+          </span>
         </a>
         <div class="nav-actions">
           <button class="nav-toggle" aria-label="Toggle navigation">Menu</button>
@@ -398,8 +401,12 @@
         0.01,
         100
       );
-      camera.position.set(0, 1.12, 2.8);
-      camera.lookAt(0, 0.52, 0);
+      // Tuning values: edit these numbers to adjust framing.
+      const CAMERA_POS = { x: 0, y: 1.12, z: 2.8 };
+      const CAMERA_LOOK_AT = { x: 0, y: 0.52, z: 0 };
+      const CHAIR_Y_OFFSET = 0;
+      camera.position.set(CAMERA_POS.x, CAMERA_POS.y, CAMERA_POS.z);
+      camera.lookAt(CAMERA_LOOK_AT.x, CAMERA_LOOK_AT.y, CAMERA_LOOK_AT.z);
 
       scene.add(new THREE.AmbientLight(0xfff8f0, 1.5));
       const key = new THREE.DirectionalLight(0xfff5e0, 3.0);
@@ -439,7 +446,9 @@
           const scale = 1.6 / Math.max(size.x, size.y, size.z);
           chair.scale.setScalar(scale);
           chair.position.sub(center.multiplyScalar(scale));
-          chair.position.y += -box.min.y * scale + 0.02;
+          // Keep model grounded, then apply your manual offset.
+          const groundedY = -box.min.y * scale + 0.02;
+          chair.position.y += groundedY + CHAIR_Y_OFFSET;
           scene.add(chair);
         },
         (xhr) => {
