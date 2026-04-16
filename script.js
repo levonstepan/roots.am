@@ -87,6 +87,11 @@ const translations = {
       "Roots Furniture is a family business with over 20 years of history. We keep the heart of craftsmanship and amplify it with smart automation.",
     storyPoints: ["Family legacy", "Handed down through generations.", "Industry 4.0 precision", "Automation for consistency and accuracy."],
     storyLearnMore: "Learn More",
+    aboutPageTitle: "Our Story | Roots Furniture",
+    aboutBack: "← Back to Story Snapshot",
+    aboutHeading: "Our story",
+    aboutLead: "Video from our workshop and team — the same roots behind every piece.",
+    aboutVideoTitle: "Roots Furniture — our story",
     proofTitle: "Proof & Trust",
     proofSubtitle: "Supported by Acba Leasing · Exporting to Russia · Exhibitions · Certifications",
     proofCards: [
@@ -190,6 +195,11 @@ const translations = {
       "Roots Furniture-ը ընտանեկան բիզնես է՝ ավելի քան 20 տարվա պատմությամբ։ Մենք պահպանում ենք վարպետության սիրտը և ուժեղացնում այն խելացի ավտոմատացմամբ։",
     storyPoints: ["Ընտանեկան ժառանգություն", "Սերնդեսերունդ փոխանցված արժեքներ։", "Industry 4.0 ճշգրտություն", "Ավտոմատացում՝ կայունության և ճշգրտության համար։"],
     storyLearnMore: "Իմանալ ավելին",
+    aboutPageTitle: "Մեր պատմությունը | Roots Furniture",
+    aboutBack: "← Վերադառնալ Պատմության հատված",
+    aboutHeading: "Մեր պատմությունը",
+    aboutLead: "Տեսանյութ մեր արհեստանոցից և թիմից՝ նույն արմատները յուրաքանչյուր արտադրանքի հիմքում։",
+    aboutVideoTitle: "Roots Furniture — մեր պատմությունը",
     proofTitle: "Վստահություն և ապացույցներ",
     proofSubtitle: "Աջակցվում է Acba Leasing-ի կողմից · Արտահանում Ռուսաստան · Ցուցահանդեսներ · Սերտիֆիկատներ",
     proofCards: [
@@ -326,7 +336,19 @@ function applyLanguage(langCode) {
   setText(".story-point:nth-of-type(1) p", copy.storyPoints[1]);
   setText(".story-point:nth-of-type(2) h4", copy.storyPoints[2]);
   setText(".story-point:nth-of-type(2) p", copy.storyPoints[3]);
-  setText('.story-highlight a[href="about.html"]', copy.storyLearnMore);
+  setText('.story-highlight .btn-outline[href*="about.html"]', copy.storyLearnMore);
+  if (!document.querySelector('.story-highlight .btn-outline[href*="about.html"]')) {
+    const storyCta = document.querySelector(".story-highlight .btn-outline");
+    if (storyCta) storyCta.textContent = copy.storyLearnMore;
+  }
+
+  setText(".about-story-back .btn", copy.aboutBack);
+  setText(".about-story-page .section-title", copy.aboutHeading);
+  setText(".about-story-lead", copy.aboutLead);
+  const aboutIframe = document.querySelector(".about-story-page iframe");
+  if (aboutIframe && copy.aboutVideoTitle) {
+    aboutIframe.setAttribute("title", copy.aboutVideoTitle);
+  }
 
   setText(".story-proof h3", copy.proofTitle);
   setText(".story-proof > p", copy.proofSubtitle);
@@ -398,6 +420,8 @@ function applyLanguage(langCode) {
 }
 
 const languageButtons = document.querySelectorAll(".language-switch .lang-btn");
+const savedLanguage = window.localStorage.getItem("siteLanguage") || "en";
+applyLanguage(savedLanguage);
 
 if (languageButtons.length > 0) {
   languageButtons.forEach((button) => {
@@ -406,9 +430,6 @@ if (languageButtons.length > 0) {
       applyLanguage(selected);
     });
   });
-
-  const savedLanguage = window.localStorage.getItem("siteLanguage") || "en";
-  applyLanguage(savedLanguage);
 }
 
 // -- Drifting sketches background --
