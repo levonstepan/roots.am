@@ -232,6 +232,7 @@ const translations = {
     contactTitle: "Contact Us",
     contactIntro: "Roots Furniture LLC",
     contactLabels: ["Address", "Phone", "Leadership", "Email"],
+    contactAddress: "20/1 Ter-Gabrielyan Street, Vagharshapat",
     contactLeadership: "Levon Stepanyan - CEO of Roots LLC",
     footerCompanyTitle: "Company",
     footerCompanyLinks: ["Privacy policy", "Legal notes", "Terms & conditions"],
@@ -404,6 +405,7 @@ const translations = {
     contactTitle: "Կապ մեզ հետ",
     contactIntro: "Roots Furniture ՍՊԸ",
     contactLabels: ["Հասցե", "Հեռախոս", "Ղեկավարություն", "Էլ. փոստ"],
+    contactAddress: "20/1 Տեր-Գաբրիելյան փողոց, Վաղարշապատ",
     contactLeadership: "Լևոն Ստեփանյան - Roots LLC-ի տնօրեն",
     footerCompanyTitle: "Ընկերություն",
     footerCompanyLinks: ["Գաղտնիության քաղաքականություն", "Իրավական նշումներ", "Պայմաններ և դրույթներ"],
@@ -564,6 +566,7 @@ function applyLanguage(langCode) {
   setText("#contact .section-title", copy.contactTitle);
   setText(".contact-intro", copy.contactIntro);
   setList(".contact-item h3", copy.contactLabels);
+  setText(".contact-item:nth-of-type(1) p", copy.contactAddress);
   setText(".contact-item:nth-of-type(3) p", copy.contactLeadership);
 
   setText(".footer-company-title", copy.footerCompanyTitle);
