@@ -901,8 +901,8 @@ section.environment-section {
 
 .chair-spin-sticky {
   position: sticky;
-  top: 0;
-  height: 100vh;
+  top: -4vh;
+  height: 104vh;
   overflow: hidden;
 }
 
