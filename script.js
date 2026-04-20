@@ -248,9 +248,10 @@ const translations = {
     customiseLead:
       "Build a custom chair with shell, wood type, and fabric selections.",
     scrollHint: "↓ Scroll to explore colours",
-    customiseCardTitle: "Configurator Preview",
-    customiseCardBody: "Real-time visual updates, summary panel, and saved design options.",
-    customiseCardItems: ["Chair shell", "Wood types", "Fabrics"],
+    customiseCardTitle: "Build Your Configuration",
+    customiseCardBody:
+      "Tell us your preferences and we'll confirm production timelines, material availability, and pricing before anything begins.",
+    customiseCardItems: ["→ Wood finish", "→ Fabric family and colour", "→ Shell and silhouette"],
     customiseCardCta: "Send Request",
     contactTitle: "Contact Us",
     contactIntro: "Roots Furniture LLC",
