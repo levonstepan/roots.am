@@ -250,7 +250,7 @@ const translations = {
     scrollHint: "↓ Scroll to explore colours",
     customiseCardTitle: "Build Your Configuration",
     customiseCardBody:
-      "Tell us your preferences and we'll confirm production timelines, material availability, and pricing before anything begins.",
+      "Tell us your preferences and we'll confirm production timelines, material availability, and pricing before anything begins. Choose:",
     customiseCardItems: ["Wood finish", "Fabric family and colour", "Shell and silhouette"],
     customiseCardCta: "Send Request",
     contactTitle: "Contact Us",
