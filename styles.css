@@ -944,6 +944,7 @@ section.environment-section {
   display: flex;
   align-items: center;
   overflow: hidden;
+  padding-top: 5rem;
 }
 
 .chair-scroll-images {
@@ -970,12 +971,16 @@ section.environment-section {
 }
 
 .chair-scroll-right {
-  flex: 0 0 440px;
+  flex: 0 0 420px;
   padding-right: 3vw;
   padding-left: 1rem;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+}
+
+.chair-scroll-right .section-title {
+  font-size: clamp(1.5rem, 2.5vw, 2.2rem);
 }
 
 .chair-scroll-text {
