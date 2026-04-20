@@ -246,7 +246,7 @@ const translations = {
       "We run a low-waste shop: dust and offcuts feed recovery instead of the trash pile, solar offsets a real share of our power, and we tune kilns and cutting so timber goes further. Less scrap, less guesswork-and furniture you can still be proud to put in a room.",
     customiseTitle: "Customise Your Chair",
     customiseLead:
-      "What you choose matters to us. Your choices don't disappear into a system. They reach a workshop, a craftsman, a piece of furniture waiting to become yours.",
+      "What you choose matters to us. Your choices don't disappear into a system. They reach a workshop, a craftsman, to become a piece of furniture designed to be yours.",
     scrollHint: "↓ Scroll to explore colours",
     customiseCardTitle: "Build Your Configuration",
     customiseCardBody:
@@ -424,7 +424,7 @@ const translations = {
       "Մենք վարում ենք ցածր թափոններով արտադրություն․ փոշին և մնացորդները վերամշակվում են, արևային էներգիան ծածկում է էլեկտրաէներգիայի մի մասը, իսկ չորացման և կտրման գործընթացները կարգավորվում են, որպեսզի փայտը առավել արդյունավետ օգտագործվի։ Ավելի քիչ թափոն, ավելի քիչ սխալներ, և կահույք, որով կարող եք հպարտանալ։",
     customiseTitle: "Անհատականացրեք<br /><span class=\"customise-title-second\">ձեր աթոռը</span>",
     customiseLead:
-      "Ձեր ընտրությունը մեզ համար կարևոր է։ Դրանք հասնում են արհեստանոց, վարպետի ձեռքեր, և կահույքի մի կտոր, որը սպասում է դառնալ ձերինը։",
+      "Ձեր ընտրությունը մեզ համար կարևոր է։ Այն հասնում է արհեստանոց, վարպետի ձեռքեր, որպեսզի դառնա կահույքի մի կտոր՝ ստեղծված հենց ձեզ համար։",
     scrollHint: "↓ Թերթեք՝ գույները դիտելու համար",
     customiseCardTitle: "Կոնֆիգուրատորի նախադիտում",
     customiseCardBody: "Վիզուալ թարմացումներ իրական ժամանակում, ամփոփման վահանակ և պահպանված դիզայնի տարբերակներ։",
