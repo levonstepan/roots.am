@@ -998,6 +998,10 @@ section.environment-section {
   gap: 0.5rem;
 }
 
+.chair-scroll-text .section-subtitle {
+  margin-bottom: 0.35rem;
+}
+
 .chair-scroll-dots {
   position: absolute;
   bottom: 2rem;
@@ -1027,7 +1031,7 @@ section.environment-section {
 .scroll-hint {
   font-size: 0.8rem;
   color: #8a7a60;
-  margin-top: 1rem;
+  margin-top: 0.2rem;
 }
 
 .highlight {
