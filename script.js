@@ -421,7 +421,7 @@ const translations = {
     environmentTitle: "Մենք հոգ ենք տանում շրջակա միջավայրի մասին։",
     environmentBody:
       "Մենք վարում ենք ցածր թափոններով արտադրություն․ փոշին և մնացորդները վերամշակվում են, արևային էներգիան ծածկում է էլեկտրաէներգիայի մի մասը, իսկ չորացման և կտրման գործընթացները կարգավորվում են, որպեսզի փայտը առավել արդյունավետ օգտագործվի։ Ավելի քիչ թափոն, ավելի քիչ սխալներ, և կահույք, որով կարող եք հպարտանալ։",
-    customiseTitle: "Անհատականացրեք ձեր աթոռը",
+    customiseTitle: "Անհատականացրեք<br /><span class=\"customise-title-second\">ձեր աթոռը</span>",
     customiseLead:
       "Ստեղծեք պատվերով աթոռ՝ ընտրելով կորպուսը, փայտի տեսակը և գործվածքը։",
     scrollHint: "↓ Ոլորեք՝ գույները դիտելու համար",
@@ -586,7 +586,9 @@ function applyLanguage(langCode) {
   setText(".environment-text-frame .section-title", copy.environmentTitle);
   setText(".environment-text-frame .section-subtitle", copy.environmentBody);
 
-  setText("#customization .chair-scroll-text .section-title", copy.customiseTitle);
+  setHtml("#customization .chair-scroll-text .section-title", copy.customiseTitle);
+  const customiseTitle = document.querySelector("#customization .chair-scroll-text .section-title");
+  if (customiseTitle) customiseTitle.classList.toggle("is-stacked-hy", locale === "hy");
   setText("#customization .chair-scroll-text .section-subtitle", copy.customiseLead);
   setText("#customization .chair-scroll-text .scroll-hint", copy.scrollHint);
   setText("#customization .chair-scroll-right .card h3", copy.customiseCardTitle);

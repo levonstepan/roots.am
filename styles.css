@@ -984,6 +984,14 @@ section.environment-section {
   font-size: clamp(1.5rem, 2.5vw, 2.2rem);
 }
 
+.chair-scroll-right .section-title.is-stacked-hy {
+  text-align: center;
+}
+
+.chair-scroll-right .section-title .customise-title-second {
+  display: block;
+}
+
 .chair-scroll-text {
   display: flex;
   flex-direction: column;
