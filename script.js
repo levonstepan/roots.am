@@ -425,7 +425,7 @@ const translations = {
     customiseTitle: "Անհատականացրեք<br /><span class=\"customise-title-second\">ձեր աթոռը</span>",
     customiseLead:
       "Ձեր ընտրությունը մեզ համար կարևոր է։ Այն հասնում է արհեստանոց, վարպետի ձեռքեր, որպեսզի դառնա կահույքի մի կտոր՝ ստեղծված հենց ձեզ համար։",
-    scrollHint: "↓ Թերթեք՝ գույները դիտելու համար",
+    scrollHint: "",
     customiseCardTitle: "Կոնֆիգուրատորի նախադիտում",
     customiseCardBody: "Մենք կհաստատենք արտադրության ժամանակացույցը, նյութերի առկայությունն ու արժեքները, նախքան արտադրությունը սկսելը։",
     customiseCardItems: ["Աթոռի կորպուսը", "Փայտի մակերեսը", "Գործվածքն ու գույնը"],
@@ -591,7 +591,11 @@ function applyLanguage(langCode) {
   const customiseTitle = document.querySelector("#customization .chair-scroll-text .section-title");
   if (customiseTitle) customiseTitle.classList.toggle("is-stacked-hy", locale === "hy");
   setText("#customization .chair-scroll-text .section-subtitle", copy.customiseLead);
-  setText("#customization .chair-scroll-text .scroll-hint", copy.scrollHint);
+  const scrollHint = document.querySelector("#customization .chair-scroll-text .scroll-hint");
+  if (scrollHint) {
+    scrollHint.textContent = copy.scrollHint || "";
+    scrollHint.style.display = copy.scrollHint ? "" : "none";
+  }
   setText("#customization .chair-scroll-right .card h3", copy.customiseCardTitle);
   setText("#customization .chair-scroll-right .card p.muted", copy.customiseCardBody);
   setList("#customization .chair-scroll-right .card ul li", copy.customiseCardItems);
