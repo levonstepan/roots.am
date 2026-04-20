@@ -977,6 +977,7 @@ section.environment-section {
   transform: translateX(-5rem);
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 1.5rem;
 }
 
@@ -996,10 +997,18 @@ section.environment-section {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  width: min(100%, 380px);
+  margin: 0 auto;
 }
 
 .chair-scroll-text .section-subtitle {
   margin-bottom: 0.35rem;
+}
+
+.chair-scroll-right .card {
+  width: min(100%, 380px);
+  margin: 0 auto;
+  padding-left: 1.9rem;
 }
 
 .chair-scroll-dots {
