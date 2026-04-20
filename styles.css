@@ -1013,12 +1013,20 @@ section.environment-section {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .chair-scroll-right .card ul {
   display: inline-block;
-  margin: 0.35rem auto 0;
+  margin: 0.35rem auto 0.6rem;
   text-align: left;
+}
+
+.chair-scroll-right .card .btn.btn-primary {
+  display: inline-flex;
+  margin: 0 auto !important;
 }
 
 .chair-scroll-dots {
