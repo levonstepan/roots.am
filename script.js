@@ -35,6 +35,73 @@ navItems.forEach((item) => {
   }
 });
 
+function initCustomizationSequence() {
+  const section = document.getElementById("customization");
+  const sequenceRoot = section?.querySelector(".chair-sequence");
+  if (!section || !sequenceRoot) return;
+
+  const frameNames = [
+    "chair_burgundy_walnut.jpg",
+    "chair_cream_natural.jpg",
+    "chair_blue_gold.jpg",
+    "chair_tan_black.jpg",
+    "chair_sage_natural.jpg",
+    "chair_white_black.jpg",
+    "chair_navy_black.jpg",
+    "chair_rust_darkwalnut.jpg",
+    "chair_olive_walnut.jpg",
+    "chair_grey_natural.jpg",
+  ];
+
+  const basePath = "./Images/Customize%20Chair/";
+  const frames = frameNames.map((name, index) => {
+    const image = document.createElement("img");
+    image.className = "chair-sequence-image";
+    image.src = `${basePath}${name}`;
+    image.alt = `Custom chair variant ${index + 1}`;
+    image.loading = index < 2 ? "eager" : "lazy";
+    image.decoding = "async";
+    if (index === 0) image.classList.add("is-active");
+    sequenceRoot.appendChild(image);
+    return image;
+  });
+
+  section.style.setProperty("--chair-sequence-steps", String(Math.max(frameNames.length - 1, 1)));
+
+  const totalTransitions = Math.max(frames.length - 1, 1);
+  let ticking = false;
+
+  function updateFrames() {
+    const rect = section.getBoundingClientRect();
+    const scrollRange = Math.max(rect.height - window.innerHeight, 1);
+    const progress = Math.min(Math.max(-rect.top / scrollRange, 0), 1);
+    const position = progress * totalTransitions;
+    const activeIndex = Math.floor(position);
+    const nextIndex = Math.min(activeIndex + 1, frames.length - 1);
+    const blend = position - activeIndex;
+
+    frames.forEach((frame, index) => {
+      let opacity = 0;
+      if (index === activeIndex) opacity = 1 - blend;
+      if (index === nextIndex) opacity = Math.max(opacity, blend);
+      frame.style.opacity = opacity.toFixed(3);
+      frame.classList.toggle("is-active", opacity > 0);
+    });
+
+    ticking = false;
+  }
+
+  function requestUpdate() {
+    if (ticking) return;
+    ticking = true;
+    window.requestAnimationFrame(updateFrames);
+  }
+
+  window.addEventListener("scroll", requestUpdate, { passive: true });
+  window.addEventListener("resize", requestUpdate);
+  requestUpdate();
+}
+
 const translations = {
   en: {
     htmlLang: "en",
@@ -563,6 +630,7 @@ function applyLanguage(langCode) {
 const languageButtons = document.querySelectorAll(".language-switch .lang-btn");
 const savedLanguage = window.localStorage.getItem("siteLanguage") || "en";
 applyLanguage(savedLanguage);
+initCustomizationSequence();
 
 if (languageButtons.length > 0) {
   languageButtons.forEach((button) => {

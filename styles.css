@@ -933,31 +933,67 @@ section.environment-section {
 
 .chair-spin-section {
   position: relative;
-  padding: 4rem 0;
+  --chair-sequence-steps: 9;
+  --chair-sequence-step-height: 48vh;
+  min-height: calc(100vh + (var(--chair-sequence-steps) * var(--chair-sequence-step-height)));
+  padding: 0;
 }
 
 .chair-spin-sticky {
-  position: relative;
-  height: auto;
-  overflow: visible;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
 }
 
 .chair-spin-content {
   position: relative;
   z-index: 1;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
-  min-height: 0;
-  padding: 0 5vw;
-  gap: 2rem;
+  min-height: 100vh;
+  padding: 3rem 5vw;
+  gap: 3rem;
   max-width: 1200px;
   margin: 0 auto;
   box-sizing: border-box;
+  width: 100%;
 }
 
 .chair-spin-left {
-  flex: 1;
-  max-width: 36rem;
+  position: relative;
+  height: 100%;
+  min-height: 420px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.25rem;
+}
+
+.chair-sequence {
+  position: relative;
+  width: min(90%, 560px);
+  aspect-ratio: 4 / 5;
+  margin-bottom: 1rem;
+}
+
+.chair-sequence-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  opacity: 0;
+  transition: opacity 0.35s linear;
+  will-change: opacity;
+  pointer-events: none;
+}
+
+.chair-sequence-image.is-active {
+  opacity: 1;
 }
 
 .chair-spin-left .section-title {
@@ -1090,14 +1126,30 @@ section.environment-section {
   }
 
   .chair-spin-content {
+    grid-template-columns: 1fr;
+    min-height: 100vh;
     justify-content: flex-start;
     padding: 1.25rem 5vw;
-    padding-top: 15vh;
-    gap: 1rem;
+    padding-top: 12vh;
+    gap: 1.5rem;
   }
 
   .chair-spin-section {
-    padding: 3rem 0;
+    --chair-sequence-step-height: 55vh;
+  }
+
+  .chair-spin-left {
+    min-height: 380px;
+  }
+
+  .chair-sequence {
+    width: min(86vw, 420px);
+    margin: 0 auto 0.5rem;
+  }
+
+  .chair-spin-right {
+    width: 100%;
+    justify-self: stretch;
   }
 
   .class-grid {
@@ -1156,6 +1208,7 @@ section.environment-section {
 
 /* Chair spin -- right-side layout */
 .chair-spin-right {
-  flex: 0 0 340px;
+  width: min(100%, 380px);
+  justify-self: end;
 }
 
