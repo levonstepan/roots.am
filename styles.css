@@ -970,8 +970,9 @@ section.environment-section {
 }
 
 .chair-scroll-right {
-  flex: 0 0 380px;
-  padding-right: 4vw;
+  flex: 0 0 440px;
+  padding-right: 3vw;
+  padding-left: 1rem;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
