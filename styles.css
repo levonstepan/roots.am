@@ -1035,9 +1035,9 @@ section.environment-section {
 
 .chair-scroll-dots {
   position: absolute;
-  bottom: 2rem;
-  left: 50%;
-  transform: translateX(-50%);
+  bottom: 1.25rem;
+  right: 52%;
+  transform: none;
   display: flex;
   gap: 8px;
   z-index: 2;
@@ -1259,6 +1259,13 @@ section.environment-section {
   }
   .chair-scroll-section {
     height: 420vh;
+  }
+
+  .chair-scroll-dots {
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+    bottom: 1rem;
   }
 }
 
