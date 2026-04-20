@@ -934,7 +934,7 @@ section.environment-section {
 /* -- Chair scroll section -- */
 .chair-scroll-section {
   position: relative;
-  height: 420vh;
+  height: 300vh;
 }
 
 .chair-scroll-sticky {
@@ -1214,7 +1214,7 @@ section.environment-section {
     padding: 1.25rem;
   }
   .chair-scroll-section {
-    height: 560vh;
+    height: 420vh;
   }
 }
 
