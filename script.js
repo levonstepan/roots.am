@@ -428,7 +428,7 @@ const translations = {
     scrollHint: "↓ Թերթեք՝ գույները դիտելու համար",
     customiseCardTitle: "Կոնֆիգուրատորի նախադիտում",
     customiseCardBody: "Մենք կհաստատենք արտադրության ժամանակացույցը, նյութերի առկայությունն ու արժեքները, նախքան արտադրությունը սկսելը։",
-    customiseCardItems: ["Աթոռի կորպուս", "Փայտի տեսակներ", "Գործվածքներ"],
+    customiseCardItems: ["Աթոռի կորպուսը", "Փայտի մակերեսը", "Գործվածքն ու գույնը"],
     customiseCardCta: "Ուղարկել հարցում",
     contactTitle: "Կապ մեզ հետ",
     contactIntro: "Roots Furniture ՍՊԸ",
