@@ -43,7 +43,7 @@ section#customization {
 }
 
 section#people {
-  padding-top: 0.75rem;
+  padding-top: 0;
   padding-bottom: 1.5rem;
 }
 
@@ -55,7 +55,7 @@ section#people .people-video-hero {
   position: relative;
   border-radius: 16px;
   overflow: hidden;
-  margin: 0.3rem 0 0.75rem;
+  margin: 0 0 0.75rem;
   border: 1px solid var(--line);
   box-shadow: var(--shadow);
 }
