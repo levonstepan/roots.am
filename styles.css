@@ -953,7 +953,7 @@ section.environment-section {
   height: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
 }
 
 .chair-img {
@@ -971,10 +971,10 @@ section.environment-section {
 }
 
 .chair-scroll-right {
-  flex: 0 0 420px;
-  padding-right: 1.5vw;
+  flex: 0 0 460px;
+  padding-right: 0;
   padding-left: 1rem;
-  transform: translateX(-4rem);
+  transform: translateX(-9rem);
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
