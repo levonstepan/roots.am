@@ -55,7 +55,7 @@ section#people .people-video-hero {
   position: relative;
   border-radius: 16px;
   overflow: hidden;
-  margin: 0.75rem 0;
+  margin: 0.3rem 0 0.75rem;
   border: 1px solid var(--line);
   box-shadow: var(--shadow);
 }
