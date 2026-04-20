@@ -974,7 +974,7 @@ section.environment-section {
   flex: 0 0 460px;
   padding-right: 0;
   padding-left: 1rem;
-  transform: translateX(-5rem);
+  transform: translateX(-6rem);
   display: flex;
   flex-direction: column;
   align-items: center;
