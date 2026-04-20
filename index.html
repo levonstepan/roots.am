@@ -24,7 +24,7 @@
     <header class="site-header">
       <div class="container nav">
         <a class="brand" href="index.html">
-          <img class="brand-logo" src="./Images/Logo.jpeg" alt="Roots logo" />
+          <img class="brand-logo" src="./Images/Favicons/preview_512.png" alt="Roots logo" />
           <span class="brand-text">
             Roots Furniture
             <span>Acobian Furniture</span>
@@ -236,7 +236,6 @@
 
     <section class="chair-spin-section" id="customization">
       <div class="chair-spin-sticky">
-        <canvas id="chairCanvas" aria-hidden="true"></canvas>
         <div class="chair-spin-content">
           <div class="chair-spin-left"></div>
         </div>
@@ -365,113 +364,6 @@
       </div>
     </footer>
 
-    <script type="importmap">
-      {
-        "imports": {
-          "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
-          "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
-        }
-      }
-    </script>
     <script src="script.js" defer></script>
-    <script type="module">
-      import * as THREE from "three";
-      import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
-
-      const canvas = document.getElementById("chairCanvas");
-      if (!canvas) {
-        /* Chair spin only on pages that include #chairCanvas */
-      } else {
-      const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true });
-      renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
-      renderer.outputColorSpace = THREE.SRGBColorSpace;
-      renderer.toneMapping = THREE.ACESFilmicToneMapping;
-      renderer.toneMappingExposure = 1.4;
-
-      const scene = new THREE.Scene();
-      const camera = new THREE.PerspectiveCamera(
-        42,
-        window.innerWidth / window.innerHeight,
-        0.01,
-        100
-      );
-      // Tuning values: edit these numbers to adjust framing.
-      const CAMERA_POS = { x: 0, y: 1.12, z: 2.8 };
-      const CAMERA_LOOK_AT = { x: 0, y: 0.52, z: 0 };
-      const CHAIR_Y_OFFSET = 0;
-      camera.position.set(CAMERA_POS.x, CAMERA_POS.y, CAMERA_POS.z);
-      camera.lookAt(CAMERA_LOOK_AT.x, CAMERA_LOOK_AT.y, CAMERA_LOOK_AT.z);
-
-      scene.add(new THREE.AmbientLight(0xfff8f0, 1.5));
-      const key = new THREE.DirectionalLight(0xfff5e0, 3.0);
-      key.position.set(3, 4, 3);
-      scene.add(key);
-      const fill = new THREE.DirectionalLight(0xe8d5b0, 1.0);
-      fill.position.set(-3, 2, -1);
-      scene.add(fill);
-      const rim = new THREE.DirectionalLight(0xffffff, 0.6);
-      rim.position.set(0, 3, -4);
-      scene.add(rim);
-
-      function onResize() {
-        renderer.setSize(window.innerWidth, window.innerHeight);
-        camera.aspect = window.innerWidth / window.innerHeight;
-        camera.updateProjectionMatrix();
-      }
-      window.addEventListener("resize", onResize);
-      onResize();
-
-      let chair = null;
-      let targetRot = 0;
-      let currentRot = 0;
-
-      const modelUrl =
-        "Videos%20and%203D/Chair%203D%20models/041%20wooden%20chair.glb";
-
-      new GLTFLoader().load(
-        modelUrl,
-        (gltf) => {
-          chair = gltf.scene;
-          const box = new THREE.Box3().setFromObject(chair);
-          const center = new THREE.Vector3();
-          const size = new THREE.Vector3();
-          box.getCenter(center);
-          box.getSize(size);
-          const scale = 1.6 / Math.max(size.x, size.y, size.z);
-          chair.scale.setScalar(scale);
-          chair.position.sub(center.multiplyScalar(scale));
-          // Keep model grounded, then apply your manual offset.
-          const groundedY = -box.min.y * scale + 0.02;
-          chair.position.y += groundedY + CHAIR_Y_OFFSET;
-          scene.add(chair);
-        },
-        (xhr) => {
-          if (xhr.total) {
-            console.log("Loading:", Math.round((xhr.loaded / xhr.total) * 100) + "%");
-          }
-        },
-        (err) => console.error("GLB error:", err)
-      );
-
-      window.addEventListener(
-        "scroll",
-        () => {
-          const section = document.getElementById("customization");
-          if (!section) return;
-          const scrolled = Math.max(0, -section.getBoundingClientRect().top);
-          const total = section.offsetHeight - window.innerHeight;
-          targetRot = Math.min(1, total > 0 ? scrolled / total : 0) * Math.PI * -1;
-        },
-        { passive: true }
-      );
-
-      (function animate() {
-        requestAnimationFrame(animate);
-        currentRot += (targetRot - currentRot) * 0.08;
-        if (chair) chair.rotation.y = currentRot;
-        renderer.render(scene, camera);
-      })();
-      }
-    </script>
   </body>
 </html>

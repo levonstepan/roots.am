@@ -35,37 +35,6 @@ navItems.forEach((item) => {
   }
 });
 
-function initModelViewerInteractions() {
-  const modelViewers = document.querySelectorAll("model-viewer.model-viewer");
-
-  modelViewers.forEach((viewer) => {
-    viewer.setAttribute("camera-orbit", "0deg 75deg 2.4m");
-    viewer.setAttribute("field-of-view", "30deg");
-
-    let rotateTimeout;
-
-    viewer.addEventListener("mouseenter", () => {
-      viewer.autoRotate = true;
-      viewer.setAttribute("camera-orbit", "35deg 70deg 2m");
-      clearTimeout(rotateTimeout);
-      rotateTimeout = setTimeout(() => {
-        viewer.autoRotate = false;
-      }, 700);
-    });
-
-    viewer.addEventListener("mouseleave", () => {
-      viewer.autoRotate = false;
-      viewer.setAttribute("camera-orbit", "0deg 75deg 2.4m");
-    });
-  });
-}
-
-if (customElements.get("model-viewer")) {
-  initModelViewerInteractions();
-} else {
-  customElements.whenDefined("model-viewer").then(initModelViewerInteractions);
-}
-
 const translations = {
   en: {
     htmlLang: "en",
@@ -228,7 +197,6 @@ const translations = {
     customiseTitle: "Customise Your Chair",
     customiseLead:
       "Build a custom chair with shell, wood type, and fabric selections.",
-    scrollHint: "↓ Scroll to rotate the chair",
     contactTitle: "Contact Us",
     contactIntro: "Roots Furniture LLC",
     contactLabels: ["Address", "Phone", "Leadership", "Email"],
@@ -249,7 +217,7 @@ const translations = {
     navToggleLabel: "Մենյու",
     languageSwitchAria: "Լեզվի ընտրություն",
     navLinks: ["Գլխավոր", "Մեր մասին", "Ապրանքներ", "Անհատականացում", "Մարդիկ", "Կապ"],
-    heroTitle: "Արմատավորված ավանդույթում.<br />Պատրաստված ճշգրտությամբ։",
+    heroTitle: "Արմատավորված ավանդույթում, ստեղծված վարպետությամբ։",
     heroBody:
       "Roots Furniture-ը Վաղարշապատում բնական հաճարենուց պատրաստում է սեղաններ և աթոռներ։ Մենք համադրում ենք հայկական փայտամշակման փորձը և Industry 4.0 ավտոմատացումը՝ ապահովելու կայուն ու ազնիվ որակ։",
     heroButtons: ["Դիտել ապրանքները", "Անհատականացրեք ձեր աթոռը"],
@@ -401,7 +369,6 @@ const translations = {
     customiseTitle: "Անհատականացրեք ձեր աթոռը",
     customiseLead:
       "Ստեղծեք պատվերով աթոռ՝ ընտրելով կորպուսը, փայտի տեսակը և գործվածքը։",
-    scrollHint: "↓ Ոլորեք աթոռը՝ սքրոլ անելով",
     contactTitle: "Կապ մեզ հետ",
     contactIntro: "Roots Furniture ՍՊԸ",
     contactLabels: ["Հասցե", "Հեռախոս", "Ղեկավարություն", "Էլ. փոստ"],
@@ -561,8 +528,6 @@ function applyLanguage(langCode) {
 
   setText("#customization .chair-spin-left .section-title", copy.customiseTitle);
   setText("#customization .chair-spin-left .section-subtitle", copy.customiseLead);
-  setText("#customization .scroll-hint", copy.scrollHint);
-
   setText("#contact .section-title", copy.contactTitle);
   setText(".contact-intro", copy.contactIntro);
   setList(".contact-item h3", copy.contactLabels);
