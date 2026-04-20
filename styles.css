@@ -38,12 +38,13 @@ html {
 }
 
 section#customization {
+  padding-top: 1.5rem;
   padding-bottom: 2rem;
 }
 
 section#people {
-  padding-top: 2.75rem;
-  padding-bottom: 2.75rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 section#people .people-video-hero {
@@ -212,7 +213,7 @@ html[lang="hy"] section#people .people-line-four {
 }
 
 section#contact {
-  padding-top: 1rem;
+  padding-top: 1.5rem;
 }
 
 section#contact .container {
