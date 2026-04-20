@@ -125,7 +125,7 @@ const translations = {
       "8. Contact",
     ],
     privacySectionBodies: [
-      "Roots Furniture LLC (also known as Acobian Furniture) is a furniture manufacturer based at 20/1 Ter-Gabrielyan Street, Vagharshapat, Armenia. We operate the website roots.am. You can reach us at info@roots.am.",
+      "Roots Furniture LLC is a furniture manufacturer based at 20/1 Ter-Gabrielyan Street, Vagharshapat, Armenia. We operate the website roots.am. You can reach us at info@roots.am.",
       "We collect only the information you voluntarily provide — such as your name, email address, and message — when you contact us through our website. We do not use tracking cookies, run advertising, or collect data automatically beyond standard server logs.",
       "Your information is used solely to respond to your enquiry or process your order. We do not sell, share, or rent your personal data to any third party.",
       "We retain your contact information only as long as necessary to fulfil your request or as required by Armenian law. You may request deletion of your data at any time by emailing info@roots.am.",
@@ -145,7 +145,7 @@ const translations = {
       "Governing law",
     ],
     legalNotesSectionBodies: [
-      "Roots Furniture LLC (Acobian Furniture) is a furniture company based at 20/1 Ter-Gabrielyan Street, Vagharshapat, Armenia. You can reach us by email and phone as listed on the website.",
+      "Roots Furniture LLC is a furniture company based at 20/1 Ter-Gabrielyan Street, Vagharshapat, Armenia. You can reach us by email and phone as listed on the website.",
       "All content on this website — including text, images, product designs, technical drawings, and 3D models — is the property of Roots Furniture LLC and is protected under applicable Armenian and international copyright law. Reproduction or use without written permission is prohibited.",
       "We make every effort to ensure the information on this site is accurate and up to date. However, product specifications, pricing, and availability may change without notice. Always confirm details with us directly before placing an order.",
       "Roots Furniture LLC shall not be liable for any indirect or consequential loss arising from the use of this website or reliance on any information contained herein.",
@@ -297,7 +297,7 @@ const translations = {
       "8. Կապ",
     ],
     privacySectionBodies: [
-      "Roots Furniture LLC-ն (նաև հայտնի որպես Acobian Furniture) կահույք արտադրող ընկերություն է, որը գտնվում է 20/1 Ter-Gabrielyan Street, Վաղարշապատ, Հայաստան։ Մենք գործում ենք roots.am կայքում։ Կարող եք կապ հաստատել մեզ հետ info@roots.am հասցեով։",
+      "Roots Furniture LLC-ն կահույք արտադրող ընկերություն է, որը գտնվում է 20/1 Ter-Gabrielyan Street, Վաղարշապատ, Հայաստան։ Մենք գործում ենք roots.am կայքում։ Կարող եք կապ հաստատել մեզ հետ info@roots.am հասցեով։",
       "Մենք հավաքում ենք միայն այն տվյալները, որոնք դուք կամավոր տրամադրում եք՝ օրինակ՝ ձեր անունը, էլ․ հասցեն և հաղորդագրությունը, երբ մեզ հետ կապ եք հաստատում մեր կայքի միջոցով։ Մենք չենք օգտագործում հետևելու (tracking) քուքիներ, չենք վարում գովազդ, և տվյալներ չենք հավաքում ավտոմատ կերպով՝ սովորական սերվերի լոգերից դուրս։",
       "Ձեր տվյալներն օգտագործվում են բացառապես ձեր հարցմանը պատասխանելու կամ ձեր պատվերը մշակելու համար։ Մենք չենք վաճառում, չենք փոխանցում և չենք վարձակալում ձեր անձնական տվյալները որևէ երրորդ կողմի։",
       "Մենք պահպանում ենք ձեր կոնտակտային տվյալները միայն այնքան ժամանակ, որքան անհրաժեշտ է ձեր հարցումը բավարարելու համար կամ ինչպես պահանջում է Հայաստանի օրենքը։ Դուք ցանկացած պահի կարող եք պահանջել ձեր տվյալների ջնջում՝ info@roots.am էլ․ հասցեով գրելով։",
@@ -317,7 +317,7 @@ const translations = {
       "Կիրառելի իրավունք",
     ],
     legalNotesSectionBodies: [
-      "Roots Furniture LLC-ն (Acobian Furniture) կահույքի ընկերություն է, որը գտնվում է 20/1 Ter-Gabrielyan Street, Վաղարշապատ, Հայաստան։ Կապ հաստատելու համար կարող եք օգտագործել կայքում նշված էլ․ փոստն ու հեռախոսը։",
+      "Roots Furniture LLC-ն կահույքի ընկերություն է, որը գտնվում է 20/1 Ter-Gabrielyan Street, Վաղարշապատ, Հայաստան։ Կապ հաստատելու համար կարող եք օգտագործել կայքում նշված էլ․ փոստն ու հեռախոսը։",
       "Այս կայքի ամբողջ բովանդակությունը՝ ներառյալ տեքստերը, պատկերները, արտադրանքի նախագծերը, տեխնիկական գծագրերը և 3D մոդելները պատկանում են Roots Furniture LLC-ին և պաշտպանված են ՀՀ և միջազգային հեղինակային իրավունքի նորմերով։ Վերարտադրումը կամ օգտագործումը՝ առանց գրավոր թույլտվության արգելված է։",
       "Մենք անում ենք ամեն ինչ՝ այս կայքում տեղադրված տեղեկատվությունը ճշգրիտ և արդիական պահելու համար։ Սակայն արտադրանքի բնութագրերը, գները և հասանելիությունը կարող են փոխվել՝ առանց նախապես ծանուցելու։ Պատվեր կատարելուց առաջ մանրամասները միշտ ճշտեք մեզ հետ ուղղակիորեն։",
       "Roots Furniture LLC-ն չի կրելու որևէ անուղղակի կամ հետևանքային վնասի պատասխանատվություն՝ այս կայքի օգտագործման կամ սույն կայքում տեղադրված տեղեկատվության վրա հենվելու արդյունքում։",
@@ -597,7 +597,11 @@ function applyLanguage(langCode) {
     }
   });
 
-  setText(".footer-bottom > span:first-child", copy.footerBottom);
+  const isPolicyPage =
+    document.body.classList.contains("privacy-policy-page") ||
+    document.body.classList.contains("legal-notes-page") ||
+    document.body.classList.contains("terms-and-conditions-page");
+  setText(".footer-bottom > span:first-child", isPolicyPage ? "© 2026 Roots Furniture" : copy.footerBottom);
   setText(".footer-tagline", copy.footerTagline);
 
   const langButtons = document.querySelectorAll(".language-switch .lang-btn");
