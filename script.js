@@ -247,6 +247,11 @@ const translations = {
     customiseTitle: "Customise Your Chair",
     customiseLead:
       "Build a custom chair with shell, wood type, and fabric selections.",
+    scrollHint: "↓ Scroll to explore colours",
+    customiseCardTitle: "Configurator Preview",
+    customiseCardBody: "Real-time visual updates, summary panel, and saved design options.",
+    customiseCardItems: ["Chair shell", "Wood types", "Fabrics"],
+    customiseCardCta: "Send Request",
     contactTitle: "Contact Us",
     contactIntro: "Roots Furniture LLC",
     contactLabels: ["Address", "Phone", "Leadership", "Email"],
@@ -419,6 +424,11 @@ const translations = {
     customiseTitle: "Անհատականացրեք ձեր աթոռը",
     customiseLead:
       "Ստեղծեք պատվերով աթոռ՝ ընտրելով կորպուսը, փայտի տեսակը և գործվածքը։",
+    scrollHint: "↓ Ոլորեք՝ գույները դիտելու համար",
+    customiseCardTitle: "Կոնֆիգուրատորի նախադիտում",
+    customiseCardBody: "Վիզուալ թարմացումներ իրական ժամանակում, ամփոփման վահանակ և պահպանված դիզայնի տարբերակներ։",
+    customiseCardItems: ["Աթոռի կորպուս", "Փայտի տեսակներ", "Գործվածքներ"],
+    customiseCardCta: "Ուղարկել հարցում",
     contactTitle: "Կապ մեզ հետ",
     contactIntro: "Roots Furniture ՍՊԸ",
     contactLabels: ["Հասցե", "Հեռախոս", "Ղեկավարություն", "Էլ. փոստ"],
@@ -578,6 +588,11 @@ function applyLanguage(langCode) {
 
   setText("#customization .chair-scroll-text .section-title", copy.customiseTitle);
   setText("#customization .chair-scroll-text .section-subtitle", copy.customiseLead);
+  setText("#customization .chair-scroll-text .scroll-hint", copy.scrollHint);
+  setText("#customization .chair-scroll-right .card h3", copy.customiseCardTitle);
+  setText("#customization .chair-scroll-right .card p.muted", copy.customiseCardBody);
+  setList("#customization .chair-scroll-right .card ul li", copy.customiseCardItems);
+  setText("#customization .chair-scroll-right .card .btn.btn-primary", copy.customiseCardCta);
   setText("#contact .section-title", copy.contactTitle);
   setText(".contact-intro", copy.contactIntro);
   setList(".contact-item h3", copy.contactLabels);
