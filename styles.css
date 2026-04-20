@@ -47,6 +47,10 @@ section#people {
   padding-bottom: 1.5rem;
 }
 
+section#people:has(.video-play-in-view) {
+  padding-bottom: 1.5rem;
+}
+
 section#people .people-video-hero {
   position: relative;
   border-radius: 16px;
