@@ -425,7 +425,7 @@ const translations = {
     customiseTitle: "Անհատականացրեք<br /><span class=\"customise-title-second\">ձեր աթոռը</span>",
     customiseLead:
       "Ստեղծեք պատվերով աթոռ՝ ընտրելով կորպուսը, փայտի տեսակը և գործվածքը։",
-    scrollHint: "↓ Ոլորեք՝ գույները դիտելու համար",
+    scrollHint: "↓ Թերթեք՝ գույները դիտելու համար",
     customiseCardTitle: "Կոնֆիգուրատորի նախադիտում",
     customiseCardBody: "Վիզուալ թարմացումներ իրական ժամանակում, ամփոփման վահանակ և պահպանված դիզայնի տարբերակներ։",
     customiseCardItems: ["Աթոռի կորպուս", "Փայտի տեսակներ", "Գործվածքներ"],
