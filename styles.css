@@ -974,6 +974,7 @@ section.environment-section {
   flex: 0 0 420px;
   padding-right: 3vw;
   padding-left: 1rem;
+  transform: translateX(-2rem);
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
@@ -1205,6 +1206,7 @@ section.environment-section {
     flex: none;
     width: 92%;
     padding: 0;
+    transform: none;
     z-index: 1;
     background: rgba(245, 240, 232, 0.88);
     backdrop-filter: blur(6px);
