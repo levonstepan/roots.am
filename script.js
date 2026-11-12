@@ -132,7 +132,7 @@ const translations = {
       "You have the right to access, correct, or delete any personal data we hold about you. To exercise these rights, contact us at info@roots.am and we will respond within 30 days.",
       "We take reasonable technical measures to protect your data. Our website uses HTTPS encryption for all data in transit.",
       "We may update this policy occasionally. The date at the top of this page will always reflect the most recent version.",
-      "For any privacy-related questions, email us at <a href=\"mailto:info@roots.am\" style=\"color: var(--accent);\">info@roots.am</a> or call +374 91 665520.",
+      "For any privacy-related questions, email us at <a href=\"mailto:info@roots.am\" style=\"color: var(--accent);\">info@roots.am</a>.",
     ],
     legalNotesPageTitle: "Legal Notes",
     legalNotesBack: "← Back",
@@ -145,7 +145,7 @@ const translations = {
       "Governing law",
     ],
     legalNotesSectionBodies: [
-      "Roots Furniture LLC is a furniture company based at 20/1 Ter-Gabrielyan Street, Vagharshapat, Armenia. You can reach us by email and phone as listed on the website.",
+      "Roots Furniture LLC is a furniture company based at 20/1 Ter-Gabrielyan Street, Vagharshapat, Armenia. You can reach us by email at info@roots.am.",
       "All content on this website — including text, images, product designs, technical drawings, and 3D models — is the property of Roots Furniture LLC and is protected under applicable Armenian and international copyright law. Reproduction or use without written permission is prohibited.",
       "We make every effort to ensure the information on this site is accurate and up to date. However, product specifications, pricing, and availability may change without notice. Always confirm details with us directly before placing an order.",
       "Roots Furniture LLC shall not be liable for any indirect or consequential loss arising from the use of this website or reliance on any information contained herein.",
@@ -176,7 +176,7 @@ const translations = {
       "Our furniture carries a 12-month warranty against manufacturing defects under normal use conditions. This does not cover damage caused by misuse, improper care, or natural wear and tear. To make a warranty claim, contact <a href=\"mailto:info@roots.am\" style=\"color: var(--accent);\">info@roots.am</a> with photos and your order details.",
       "Any damage must be reported within 48 hours of receiving your order, with photographic evidence. Claims made after this period may not be accepted.",
       "These terms are governed by the laws of the Republic of Armenia. Disputes will be resolved in the competent courts of Armenia.",
-      "For any questions about these terms, reach us at <a href=\"mailto:info@roots.am\" style=\"color: var(--accent);\">info@roots.am</a> or +374 91 665520.",
+      "For any questions about these terms, reach us at <a href=\"mailto:info@roots.am\" style=\"color: var(--accent);\">info@roots.am</a>.",
     ],
     proofTitle: "Proof & Trust",
     proofSubtitle: "Supported by Acba Leasing · Exporting to Russia · Exhibitions · Certifications",
@@ -255,7 +255,7 @@ const translations = {
     customiseCardCta: "Send Request",
     contactTitle: "Contact Us",
     contactIntro: "Roots Furniture LLC",
-    contactLabels: ["Address", "Phone", "Leadership", "Email"],
+    contactLabels: ["Address", "Leadership", "Email"],
     contactAddress: "20/1 Ter-Gabrielyan Street, Vagharshapat",
     contactLeadership: "Levon Stepanyan - CEO of Roots LLC",
     footerCompanyTitle: "Company",
@@ -310,7 +310,7 @@ const translations = {
       "Դուք ունեք ձեր մասին պահվող անձնական տվյալները հասանելի դարձնելու, ուղղելու կամ ջնջելու իրավունք։ Այս իրավունքները կիրառելու համար կապ հաստատեք info@roots.am հասցեով, և մենք կպատասխանենք 30 օրվա ընթացքում։",
       "Մենք ձեռնարկում ենք ողջամիտ տեխնիկական միջոցներ՝ ձեր տվյալները պաշտպանելու համար։ Մեր կայքը օգտագործում է HTTPS կոդավորումը բոլոր տվյալների փոխանցման ընթացքում։",
       "Մենք կարող ենք ժամանակ առ ժամանակ թարմացնել այս քաղաքականությունը։ Էջի վերևում նշված ամսաթիվը միշտ կհամապատասխանի առավել նոր տարբերակին։",
-      "Գաղտնիությանը վերաբերող ցանկացած հարցի համար էլ․ փոստ գրեք մեզ՝ <a href=\"mailto:info@roots.am\" style=\"color: var(--accent);\">info@roots.am</a> կամ զանգահարեք +374 91 665520։",
+      "Գաղտնիությանը վերաբերող ցանկացած հարցի համար էլ․ փոստ գրեք մեզ՝ <a href=\"mailto:info@roots.am\" style=\"color: var(--accent);\">info@roots.am</a>։",
     ],
     legalNotesPageTitle: "Իրավական ծանուցումներ",
     legalNotesBack: "← Վերադառնալ",
@@ -323,7 +323,7 @@ const translations = {
       "Կիրառելի իրավունք",
     ],
     legalNotesSectionBodies: [
-      "Roots Furniture LLC-ն կահույքի ընկերություն է, որը գտնվում է 20/1 Ter-Gabrielyan Street, Վաղարշապատ, Հայաստան։ Կապ հաստատելու համար կարող եք օգտագործել կայքում նշված էլ․ փոստն ու հեռախոսը։",
+      "Roots Furniture LLC-ն կահույքի ընկերություն է, որը գտնվում է 20/1 Ter-Gabrielyan Street, Վաղարշապատ, Հայաստան։ Կապ հաստատելու համար կարող եք գրել մեզ info@roots.am էլ․ հասցեով։",
       "Այս կայքի ամբողջ բովանդակությունը՝ ներառյալ տեքստերը, պատկերները, արտադրանքի նախագծերը, տեխնիկական գծագրերը և 3D մոդելները պատկանում են Roots Furniture LLC-ին և պաշտպանված են ՀՀ և միջազգային հեղինակային իրավունքի նորմերով։ Վերարտադրումը կամ օգտագործումը՝ առանց գրավոր թույլտվության արգելված է։",
       "Մենք անում ենք ամեն ինչ՝ այս կայքում տեղադրված տեղեկատվությունը ճշգրիտ և արդիական պահելու համար։ Սակայն արտադրանքի բնութագրերը, գները և հասանելիությունը կարող են փոխվել՝ առանց նախապես ծանուցելու։ Պատվեր կատարելուց առաջ մանրամասները միշտ ճշտեք մեզ հետ ուղղակիորեն։",
       "Roots Furniture LLC-ն չի կրելու որևէ անուղղակի կամ հետևանքային վնասի պատասխանատվություն՝ այս կայքի օգտագործման կամ սույն կայքում տեղադրված տեղեկատվության վրա հենվելու արդյունքում։",
@@ -354,7 +354,7 @@ const translations = {
       "Մեր կահույքը ունի 12 ամսվա երաշխիք՝ արտադրական արատների դեպքում՝ բնականոն օգտագործման պայմաններում։ Այն չի ծածկում ոչ պատշաճ օգտագործման, ոչ ճիշտ խնամքի կամ բնական մաշվածության հետևանքով առաջացած վնասը։ Երաշխիքային պահանջ ներկայացնելու համար կապ հաստատեք՝ <a href=\"mailto:info@roots.am\" style=\"color: var(--accent);\">info@roots.am</a> ուղարկելով նկարներ և ձեր պատվերի տվյալները։",
       "Ցանկացած վնաս պետք է հաղորդվի պատվերը ստանալուց հետո 48 ժամվա ընթացքում՝ լուսանկարային ապացույցներով։ Այս ժամկետից հետո ներկայացված պահանջները կարող են չընդունվել։",
       "Սույն պայմանները կարգավորվում են Հայաստանի Հանրապետության օրենքներով։ Վեճերը կլուծվեն իրավասու դատարաններում։",
-      "Սույն պայմանների վերաբերյալ ցանկացած հարցի համար կապ հաստատեք՝ <a href=\"mailto:info@roots.am\" style=\"color: var(--accent);\">info@roots.am</a> կամ +374 91 665520 հեռախոսահամարով։",
+      "Սույն պայմանների վերաբերյալ ցանկացած հարցի համար կապ հաստատեք՝ <a href=\"mailto:info@roots.am\" style=\"color: var(--accent);\">info@roots.am</a> էլ․ հասցեով։",
     ],
     proofTitle: "Վստահություն և ապացույցներ",
     proofSubtitle: "Աջակցվում է Acba Leasing-ի կողմից · Արտահանում Ռուսաստան · Ցուցահանդեսներ · Սերտիֆիկատներ",
@@ -432,7 +432,7 @@ const translations = {
     customiseCardCta: "Ուղարկել հարցում",
     contactTitle: "Կապ մեզ հետ",
     contactIntro: "Roots Furniture ՍՊԸ",
-    contactLabels: ["Հասցե", "Հեռախոս", "Ղեկավարություն", "Էլ. փոստ"],
+    contactLabels: ["Հասցե", "Ղեկավարություն", "Էլ. փոստ"],
     contactAddress: "20/1 Տեր-Գաբրիելյան փողոց, Վաղարշապատ",
     contactLeadership: "Լևոն Ստեփանյան - Roots LLC-ի տնօրեն",
     footerCompanyTitle: "Ընկերություն",
@@ -604,7 +604,7 @@ function applyLanguage(langCode) {
   setText(".contact-intro", copy.contactIntro);
   setList(".contact-item h3", copy.contactLabels);
   setText(".contact-item:nth-of-type(1) p", copy.contactAddress);
-  setText(".contact-item:nth-of-type(3) p", copy.contactLeadership);
+  setText(".contact-item:nth-of-type(2) p", copy.contactLeadership);
 
   setText(".footer-company-title", copy.footerCompanyTitle);
   setText(".footer-follow-title", copy.footerFollowTitle);
